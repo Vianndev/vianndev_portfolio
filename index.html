@@ -61,7 +61,7 @@
   </div>
 </div>
 
-<div class="flex flex-col overflow-y-scroll snap-y snap-mandatory overflow-x-none h-screen w-screen">
+<div class="flex flex-col overflow-y-scroll snap-y snap-proximity overflow-x-none h-screen w-screen">
   <!-- Scrollable content goes here -->
   <!--Presentation-->
   <div class="hero min-h-svh snap-start">
@@ -101,7 +101,7 @@
       </div>
     </div>
   </div>
-  <div id="Diplomes" class="hero min-h-svh md:0w-full w-1/2 m-auto shrink-0">
+  <div id="Diplomes" class="hero min-h-svh w-full md:w-1/2 m-auto shrink-0">
     <div class="hero-content snap-start flex-col">
       <div>
         <h1 class="text-6xl font-poppins m-6 text-secondary">Diplomes</h1>
@@ -116,7 +116,7 @@
                       clip-rule="evenodd"/>
               </svg>
             </div>
-            <div class="prose timeline-start mb-10 md:text-end border-primary">
+            <div class="timeline-start timeline-box mb-10 md:text-end border-primary">
               <time class="font-mono italic">2018-2021</time>
               <div class="font-black">Baccalauréat STI2D</div>
               <p>Lycée Branly</p>
@@ -135,7 +135,7 @@
                       clip-rule="evenodd"/>
               </svg>
             </div>
-            <div class="timeline-end timeline-box border-primary mb-10 prose">
+            <div class="timeline-end timeline-box border-primary">
               <time class="font-mono italic">2021-2022</time>
               <p class="text-lg font-black  inline-flex items-baseline">
             <span class=""><img src="../daysui-september-portfolio/images/illustrations/diploma-svgrepo-com.png"
@@ -153,14 +153,14 @@
           </li>
           <li>
             <hr/>
-            <div class="timeline-middle">
+            <div class="timeline-middle ">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
                 <path fill-rule="evenodd"
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
                       clip-rule="evenodd"/>
               </svg>
             </div>
-            <div class="timeline-start mb-10 md:text-end">
+            <div class="timeline-start mb-10 md:text-end timeline-box border-primary">
               <time class="font-mono italic">2023-2024</time>
               <div class="text-lg font-black">Développeur Web - RNCP niv 5 (bac + 2)</div>
               <p class="text-lg  inline-flex items-baseline">
@@ -181,21 +181,33 @@
 
   <div class="min-h-svh snap-start flex-col">
     <h1 class="text-2xl md:text-6xl font-poppins m-6 text-secondary text-center ">Recommandations</h1>
-    <div class="card lg:card-side w-10/12  xl:w-8/12 shadow-xl m-auto my-auto shrink-0">
-      <div class="bg-gray-400 flex justify-around  rounded-t-xl md:rounded-tr-none md:rounded-l-xl">
-        <div class="avatar my-3">
-          <div class="mask mask-squircle w-24">
-            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"/>
+    <div class="card lg:card-side w-10/12  xl:w-8/12 shadow-xl  m-auto my-auto  rounded-xl overflow-hidden">
+      <div class="bg-gray-400 flex flex-row md:flex-col md:justify-center align-middle justify-around ">
+        <div class="avatar my-3 md:mx-auto">
+          <div class="mask mask-squircle w-12 md:w-24">
+            <img class="mx-auto" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"/>
           </div>
         </div>
-        <div class="my-auto">
+        <div class="md:text-center">
           <h3 class="text-3xl">Vincent Amstoutz</h3>
           <p>PHP/Symfony Software engineer</p>
           <p>Sigedi</p>
         </div>
       </div>
-      <div class="card-body items-center text-center">
-        <p>Vianney a été un excellent stagiaire ! Au départ timide et réservé avec l'équipe dev et les collègues, il a
+<!--      <div class="bg-gray-400 flex flex-row md:flex-col md:justify-center align-middle justify-around   rounded-t-xl md:rounded-tr-none md:rounded-l-xl">-->
+<!--        <div class="avatar my-3 md:m-0">-->
+<!--          <div class="mask mask-squircle w-24">-->
+<!--            <img class="mx-auto" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"/>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="md:text-center">-->
+<!--          <h3 class="text-3xl">Vincent Amstoutz</h3>-->
+<!--          <p>PHP/Symfony Software engineer</p>-->
+<!--          <p>Sigedi</p>-->
+<!--        </div>-->
+<!--      </div>-->
+      <div class="bg-neutral card-body items-center text-center max-h-svh">
+        <p class="prose">Vianney a été un excellent stagiaire ! Au départ timide et réservé avec l'équipe dev et les collègues, il a
           su
           avec le temps se révéler et s'améliorer en se basant sur les revues de codes, les ressources partagées, sa
           détermination et ses initiatives. Il a finit par intégrer pleinement l'équipe et être moteur sur certains
@@ -214,15 +226,14 @@
       </div>
     </div>
   </div>
-
   <div id="about_me" class="min-h-svh snap-start shrink-0">
     <h2 class="text-4xl font-poppins-bold text-secondary text-center">À propos de moi</h2>
     <div id="section-about-me"
          class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start lg:items-center px-4 lg:px-20 py-10">
-      <!-- Profile Image for Mobile -->
+      <!-- Profile Image -->
       <div class="avatar mx-auto">
-        <div class="mask mask-squircle">
-          <img class="size-10" src="images/illustrations/profileid.jpg" alt="Photo de Vianney">
+        <div class="mask mask-squircle w-32 md:w-96 ">
+          <img  src="images/illustrations/profileid.jpg" alt="Photo de Vianney">
         </div>
       </div>
       <!-- About Me Text -->
@@ -252,5 +263,6 @@
     </div>
   </div>
 </div>
+
 </body>
 </html>
