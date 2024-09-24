@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="" data-theme="synthwave">
+<html class="no-js scroll-smooth" lang="" data-theme="synthwave">
 
 <head>
   <meta charset="utf-8">
@@ -22,49 +22,49 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
-<script src="js/app.js"></script>
+<body class="overflow-x-none">
 <!-- Navbar-->
-<div class="navbar bg-base-100">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h8m-8 6h16"/>
-        </svg>
+<nav>
+  <div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16"/>
+          </svg>
+        </div>
+        <ul tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li><a>Item 1</a></li>
+          <li><a>Item 3</a></li>
+        </ul>
       </div>
-      <ul tabindex="0"
-          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+      <a class="btn btn-ghost text-xl ">Vianney GOMAR</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
         <li><a>Item 1</a></li>
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost text-xl ">Vianney GOMAR</a>
+    <div class="navbar-end">
+      <a class="btn">Button</a>
+    </div>
   </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
-      <li><a>Item 3</a></li>
-    </ul>
-  </div>
-  <div class="navbar-end">
-    <a class="btn">Button</a>
-  </div>
-</div>
-
-<div class="flex flex-col overflow-y-scroll snap-y snap-proximity overflow-x-none h-screen w-screen">
+</nav>
+<main class="flex flex-col overflow-y-scroll snap-y h-screen w-screen">
   <!-- Scrollable content goes here -->
   <!--Presentation-->
-  <div class="hero min-h-svh snap-start">
+  <div id="Presentation" class="hero min-h-screen snap-start">
     <div class="hero-content mx-3 flex-col lg:flex-row">
       <div class="prose-lg sm:prose-2xl">
         <h2 class="font-poppins-black  mb-1">Vianney GOMAR,</h2>
@@ -78,18 +78,18 @@
             expérience en développement d'ERP, je recherche activement un poste où je pourrai continuer à développer des
             solutions web performantes et intuitives.</p>
         </div>
-<!--      <div class="prose">-->
-<!--        <h2 class="text-6xl font-poppins-black  mb-1">Vianney GOMAR,</h2>-->
-<!--        <h1-->
-<!--          class="text-8xl font-poppins-bold  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">-->
-<!--          Développeur Web Fullstack</h1>-->
-<!--        <p class="text-xl text-secondary font-poppins-black  mb-1">Lyon</p>-->
+        <!--      <div class="prose">-->
+        <!--        <h2 class="text-6xl font-poppins-black  mb-1">Vianney GOMAR,</h2>-->
+        <!--        <h1-->
+        <!--          class="text-8xl font-poppins-bold  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">-->
+        <!--          Développeur Web Fullstack</h1>-->
+        <!--        <p class="text-xl text-secondary font-poppins-black  mb-1">Lyon</p>-->
 
-<!--        <div class="font-poppins-medium my-4">-->
-<!--          <p>Je suis un développeur web passionné, toujours curieux d'explorer les nouvelles technologies. Fort de mon-->
-<!--            expérience en développement d'ERP, je recherche activement un poste où je pourrai continuer à développer des-->
-<!--            solutions web performantes et intuitives.</p>-->
-<!--        </div>-->
+        <!--        <div class="font-poppins-medium my-4">-->
+        <!--          <p>Je suis un développeur web passionné, toujours curieux d'explorer les nouvelles technologies. Fort de mon-->
+        <!--            expérience en développement d'ERP, je recherche activement un poste où je pourrai continuer à développer des-->
+        <!--            solutions web performantes et intuitives.</p>-->
+        <!--        </div>-->
       </div>
       <!--  Photo de profil  -->
       <div class="block max-lg:hidden xl:max-w-md align-top">
@@ -101,7 +101,7 @@
       </div>
     </div>
   </div>
-  <div id="Diplomes" class="hero min-h-svh w-full md:w-1/2 m-auto shrink-0">
+  <div id="Diplomes" class="hero min-h-screen w-full md:w-1/2 m-auto shrink-0">
     <div class="hero-content snap-start flex-col">
       <div>
         <h1 class="text-6xl font-poppins m-6 text-secondary">Diplomes</h1>
@@ -178,10 +178,25 @@
       </div>
     </div>
   </div>
+  <div id="Reviews" class="hero md:min-h-screen snap-start flex-col flex-grow overflow-visible">
+    <div class="hero-content snap-start flex-col h-full" >
+      <h1 class="text-2xl md:text-6xl font-poppins mt-1 md:mb-6 text-secondary text-center">Recommandations</h1>
+      <div class="form-control w-52 mx-auto">
+        <label class="label cursor-pointer">
+          <span class="label-text">Données</span>
+          <input id="is_review_received" type="checkbox" class="toggle toggle-primary peer" checked="checked"/>
+          <span class="label-text peer-checked:text-primary">Recues</span>
+        </label>
+      </div>
 
-  <div class="min-h-svh snap-start flex-col">
-    <h1 class="text-2xl md:text-6xl font-poppins m-6 text-secondary text-center ">Recommandations</h1>
-    <div class="card lg:card-side w-10/12  xl:w-8/12 shadow-xl  m-auto my-auto  rounded-xl overflow-hidden">
+      <!--      <div class="form-control w-52 mx-auto">-->
+<!--        <label class="label cursor-pointer">-->
+<!--          <span class="label-text">Données</span>-->
+<!--          <input id="is_review_received" type="checkbox" class="toggle toggle-primary" checked="checked"/>-->
+<!--          <span class="label-text">Recues</span>-->
+<!--        </label>-->
+<!--      </div>-->
+    <div id="review_given_vincent" class="flex review_given card lg:card-side h-full shadow-xl  m-auto my-auto  rounded-xl overflow-hidden">
       <div class="bg-gray-400 flex flex-row md:flex-col md:justify-center align-middle justify-around ">
         <div class="avatar my-3 md:mx-auto">
           <div class="mask mask-squircle w-12 md:w-24">
@@ -194,56 +209,213 @@
           <p>Sigedi</p>
         </div>
       </div>
-<!--      <div class="bg-gray-400 flex flex-row md:flex-col md:justify-center align-middle justify-around   rounded-t-xl md:rounded-tr-none md:rounded-l-xl">-->
-<!--        <div class="avatar my-3 md:m-0">-->
-<!--          <div class="mask mask-squircle w-24">-->
-<!--            <img class="mx-auto" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"/>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="md:text-center">-->
-<!--          <h3 class="text-3xl">Vincent Amstoutz</h3>-->
-<!--          <p>PHP/Symfony Software engineer</p>-->
-<!--          <p>Sigedi</p>-->
-<!--        </div>-->
-<!--      </div>-->
-      <div class="bg-neutral card-body items-center text-center max-h-svh">
-        <p class="prose">Vianney a été un excellent stagiaire ! Au départ timide et réservé avec l'équipe dev et les collègues, il a
-          su
-          avec le temps se révéler et s'améliorer en se basant sur les revues de codes, les ressources partagées, sa
-          détermination et ses initiatives. Il a finit par intégrer pleinement l'équipe et être moteur sur certains
-          sujets
-          à
-          son niveau. Notamment, il a su faire preuve d'une organisation, une culture gestion de projet et des bonnes
-          pratiques d’ingénierie qui sont rare à son niveau de formation et d'expérience.
-          Il est curieux, force de proposition et creuse le sujet à fond dès qu'il a un doute et qu'il estime que le
-          sujet
-          est important pour le contexte du projet et des compétences métiers. J'aurais aimé pouvoir continuer avec lui
-          et
-          lui souhaite une bonne carrière dans le secteur. Au plaisir ! 🙂</p>
+      <div class="bg-neutral card-body items-center text-center "><p class="prose">
+        <a class="underline-hover not-prose" href="#">
+          <span>J'ai pu réaliser mon stage de fin d'études avec Vincent.</span>
+        </a>
+        Dès le début, il m'a confié des tâches pertinentes qui m'ont permis de comprendre le fonctionnement du projet et m'a fourni des ressources pour me former au clean code et à d'autres bonnes pratiques.
+      </p>
+
+        <p class="prose">
+          Ses feedbacks, toujours pertinents et ouverts sur tous les sujets, étaient donnés avec respect et étaient réellement enrichissants, mettant toujours un point d'accent sur la reconnaissance des efforts réalisés par chacun.
+        </p>
+
+        <p class="prose">
+          <a class="underline-hover not-prose" href="#">
+            <span>Vincent fait preuve d'une bienveillance constante</span>
+          </a> et d'un engagement pédagogique remarquable envers toute son équipe.
+        </p>
+
+        <p class="prose">
+          Son approche de gestion de projet, caractérisée par des améliorations continues sur de nombreux aspects, des prises de feedback régulières et la formation de toute l'équipe, facilite réellement le travail de chacun, avec de nombreuses actions s'incrémentant au fil du temps.
+          <a class="underline-hover not-prose" href="#">
+            <span>Cela crée un environnement de travail agréable</span>
+          </a>, tant sur le plan technique que social.
+        </p>
+
+        <p class="prose">
+          Sur le plan technique, tous les outils, ressources et bonnes pratiques mis en place, accompagnés par le suivi de son équipe, lui permettent sans aucun doute de mener un projet à bien en faisant les meilleurs compromis et en étant future-proof sur de nombreux aspects.
+        </p>
+
+        <p class="prose">
+          <a class="underline-hover not-prose" href="#">
+            <span>Travailler au sein de son équipe a été une expérience très enrichissante</span>
+          </a> et m'a beaucoup fait grandir techniquement grâce à ses conseils. C'est un aspect que je garderai avec moi, et
+          <a class="underline-hover not-prose" href="#">
+            <span>j'aurais de même aimé continuer à travailler avec lui.</span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <div id="review_received_vincent"
+         class="review_received flex card lg:card-side shadow-xl  m-auto my-auto  rounded-xl overflow-hidden">
+      <div class="bg-gray-400 flex flex-row md:flex-col md:justify-center align-middle justify-around ">
+        <div class="avatar my-3 md:mx-auto">
+          <div class="mask mask-squircle w-12 md:w-24">
+            <img class="mx-auto" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"/>
+          </div>
+        </div>
+        <div class="md:text-center">
+          <h3 class="text-3xl">Vincent Amstoutz</h3>
+          <p>PHP/Symfony Software engineer</p>
+          <p>Sigedi</p>
+        </div>
+      </div>
+      <div class="bg-neutral card-body items-center text-center ">
+        <p class="prose">
+          Vianney a été un excellent stagiaire ! Au départ timide et réservé avec l'équipe dev et les collègues, il a su
+          avec le temps se révéler et s'améliorer en se basant sur
+          <a class="underline-hover not-prose" href="#">
+            <span>les revues de codes</span>
+          </a>,
+          <a class="underline-hover not-prose" href="#">
+            <span>les ressources partagées</span>
+          </a>, sa détermination et ses initiatives.
+        </p>
+
+        <p class="prose">
+          Il a finit par
+          <a class="underline-hover not-prose" href="#">
+            <span>intégrer pleinement l'équipe</span>
+          </a> et être moteur sur certains sujets à son niveau. Notamment,
+          <a class="underline-hover not-prose" href="#">
+            <span>il a su faire preuve d'une organisation, une culture gestion de projet et des bonnes pratiques d’ingénierie</span>
+          </a> qui sont rares à son niveau de formation et d'expérience.
+        </p>
+
+        <p class="prose">
+          Il est
+          <a class="underline-hover not-prose" href="#">
+            <span>curieux</span>
+          </a>,
+          <a class="underline-hover not-prose" href="#">
+            <span>force de proposition</span>
+          </a> et
+          <a class="underline-hover not-prose" href="#">
+            <span>creuse le sujet à fond</span>
+          </a> dès qu'il a un doute et qu'il estime que le sujet est important pour le contexte du projet et des
+          compétences métiers.
+        </p>
+
+        <p class="prose">
+          <a class="underline-hover not-prose" href="#">
+            <span>J'aurais aimé pouvoir continuer avec lui</span>
+          </a> et lui souhaite une bonne carrière dans le secteur. Au plaisir ! 🙂
+        </p>
+
         <div class="card-actions pt-2">
-          <button class="btn btn-primary">Linkedin</button>
+          <button class="btn btn-primary">Voir sur Linkedin</button>
         </div>
       </div>
     </div>
   </div>
-  <div id="about_me" class="min-h-svh snap-start shrink-0">
+  </div>
+  <div id="About_me" class="hero md:min-h-screen snap-start ">
+    <div class="hero-content snap-start flex-col">
     <h2 class="text-4xl font-poppins-bold text-secondary text-center">À propos de moi</h2>
     <div id="section-about-me"
-         class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start lg:items-center px-4 lg:px-20 py-10">
+         class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start lg:items-center px-4 lg:px-20 py-10 grow">
       <!-- Profile Image -->
       <div class="avatar mx-auto">
         <div class="mask mask-squircle w-32 md:w-96 ">
-          <img  src="images/illustrations/profileid.jpg" alt="Photo de Vianney">
+          <img src="images/illustrations/profileid.jpg" alt="Photo de Vianney">
         </div>
       </div>
       <!-- About Me Text -->
+      <article class="space-y-4 prose flex-grow">
+        <h3>✨ À Propos de Moi</h3>
+        <p>Bienvenue sur ma page ! </br> Je suis Vianney, un développeur Fullstack de <img class="inline not-prose"
+                                                                                           src="https://cdn-icons-png.flaticon.com/512/197/197560.png"
+                                                                                           width="13"/> <b>Lyon,
+          France</b></p>
+        <p>Je suis passionné par la création de projets diverses. Voici quelques exemples :</p>
+
+        <ul>
+          <li><strong>Programmation</strong> : J'apprécie particulièrement de coder avec le framework
+            <strong>PHP</strong>
+            <a href="https://symfony.com/">Symfony</a> en raison de sa structure robuste et de ses puissants mécanismes
+            d'injection de dépendances.
+          </li>
+          <li><strong>Lumières Réactives</strong> : J'ai créé un système modulaire de lumières réactives qui se
+            synchronise avec la musique en utilisant
+            <a href="https://www.espressif.com/en/products/socs/esp32">ESP32</a>,
+            <a href="https://kno.wled.ge/">WLED</a>, et
+            <a href="https://ledfx.app/">LedFx</a>.
+          </li>
+          <li><strong>Services FOSS Auto-Hébergés</strong> : J'ai mis en place et gère des services FOSS que je
+            self-host avec
+            <a href="https://www.proxmox.com/en/">Proxmox</a> et
+            <a href="https://www.casaos.io/">CasaOS</a>.
+          </li>
+          <li><strong>Networking</strong> : J'utilise
+            <a href="https://openwrt.org/">OpenWrt</a> comme firmware de routeur FOSS.
+          </li>
+          <li><strong>Travail du Bois</strong> : J'ai également un grand intérêt pour le travail du bois, ayant étudié
+            chez "Les Compagnons du Tour de France."
+          </li>
+        </ul>
+
+        <h4>🧡 Mes Passions</h4>
+        <ul class="flex-col columns-2">
+          <li>Technologie et logiciels</li>
+          <li>Self Hosting</li>
+          <li>Cybersécurité</li>
+          <li>Menuiserie</li>
+          <li>Électronique</li>
+        </ul>
+
+        <h2>Choses avec lesquelles j'aime travailler</h2>
+
+        <h3>Langages</h3>
+        <div class="flex flex-row flex-wrap w-full gap-2 not-prose">
+          <img alt="Symfony"
+               src="https://img.shields.io/badge/Symfony-000?style=for-the-badge&logo=symfony&logoColor=white"/>
+          <img alt="PHP"
+               src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white"/>
+          <img alt="JavaScript"
+               src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
+          <img alt="React"
+               src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
+          <img alt="Node.js"
+               src="https://img.shields.io/badge/-Nodejs-43853d?style=for-the-badge&logo=Node.js&logoColor=white"/>
+        </div>
+
+        <h3>Outils</h3>
+        <div class="flex flex-row flex-wrap w-full gap-2 not-prose ">
+          <img alt="Webpack"
+               src="https://img.shields.io/badge/-Webpack-8DD6F9?style=for-the-badge&logo=webpack&logoColor=white"/>
+          <img alt="Docker"
+               src="https://img.shields.io/badge/-Docker-46a2f1?style=for-the-badge&logo=docker&logoColor=white"/>
+          <img alt="GitHub Actions"
+               src="https://img.shields.io/badge/-Github_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white"/>
+          <img alt="Git"
+               src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+          <img alt="NPM"
+               src="https://img.shields.io/badge/-NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white"/>
+          <img alt="Prettier"
+               src="https://img.shields.io/badge/-Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=white"/>
+          <img alt="PHPStorm"
+               src="https://img.shields.io/badge/phpstorm-143?style=for-the-badge&logo=phpstorm&logoColor=black&color=black&labelColor=darkorchid"/>
+          <img alt="Fedora"
+               src="https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=white"/>
+          <img alt="PNPM"
+               src="https://img.shields.io/badge/pnpm-%234a4a4a.svg?style=for-the-badge&logo=pnpm&logoColor=f69220"/>
+        </div>
+
+        <h3>Où me trouver</h3>
+        <div class="flex flex-row flex-wrap w-full gap-2 not-prose justify-center">
+          <a href="https://github.com/Vianndev" target="_blank">
+            <img alt="Github"
+                 src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white"/>
+          </a>
+          <a href="https://www.linkedin.com/in/vianneygomar/" target="_blank">
+            <img alt="LinkedIn"
+                 src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/>
+          </a>
+        </div>
+      </article>
       <div class="space-y-4">
-        <a class="group text-pink-500 transition-all duration-300 ease-in-out" href="#">
-  <span class="bg-left-bottom bg-gradient-to-r from-pink-500 to-pink-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-    This text gets 'underlined' on hover
-  </span>
-        </a>
-        <a class="underline-hover" href="#">
+        <a class="underline-hover not-prose" href="#">
           <span>This text gets 'underlined' on hover</span>
         </a>
 
@@ -270,8 +442,8 @@
           créatives.</p>
       </div>
     </div>
-  </div>
-</div>
-
+  </div></div>
+</main>
+<script src="js/app.js"></script>
 </body>
 </html>
