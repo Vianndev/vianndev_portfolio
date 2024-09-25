@@ -1765,12 +1765,6 @@ html {
     --tw-bg-opacity: 1;
     background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
   }
-
-  .table-zebra tr.hover:hover,
-  .table-zebra tr.hover:nth-child(even):hover {
-    --tw-bg-opacity: 1;
-    background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity)));
-  }
 }
 
 .btn {
@@ -3361,10 +3355,6 @@ html {
   border-end-end-radius: 0px;
 }
 
-.static {
-  position: static;
-}
-
 .z-\[1\] {
   z-index: 1;
 }
@@ -3410,16 +3400,16 @@ html {
   margin-bottom: 2.5rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .block {
@@ -3463,33 +3453,16 @@ html {
   height: 1.25rem;
 }
 
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
+.h-full {
+  height: 100%;
 }
 
 .h-screen {
   height: 100vh;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.max-h-svh {
-  max-height: 100svh;
-}
-
-.min-h-svh {
-  min-height: 100svh;
-}
-
 .min-h-screen {
   min-height: 100vh;
-}
-
-.w-10\/12 {
-  width: 83.333333%;
 }
 
 .w-12 {
@@ -3516,14 +3489,6 @@ html {
   width: 100vw;
 }
 
-.w-80 {
-  width: 20rem;
-}
-
-.min-w-80 {
-  min-width: 20rem;
-}
-
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -3536,16 +3501,16 @@ html {
   flex-grow: 1;
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
 
 .snap-y {
   scroll-snap-type: y var(--tw-scroll-snap-strictness);
-}
-
-.snap-proximity {
-  --tw-scroll-snap-strictness: proximity;
 }
 
 .snap-start {
@@ -3607,10 +3572,6 @@ html {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.self-start {
-  align-self: flex-start;
-}
-
 .self-center {
   align-self: center;
 }
@@ -3623,16 +3584,8 @@ html {
   overflow: visible;
 }
 
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-
 .overflow-y-scroll {
   overflow-y: scroll;
-}
-
-.overscroll-contain {
-  overscroll-behavior: contain;
 }
 
 .scroll-smooth {
@@ -3801,6 +3754,16 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 /* Custom CSS class for underline hover effect */
 
 .underline-hover {
@@ -3845,6 +3808,8 @@ html {
    ========================================================================== */
 
 html {
+  overflow: hidden;
+  /*Remove a secondary scrollbar created by the navbar*/
   color: #222;
   font-size: 1em;
   line-height: 1.4;
@@ -4529,9 +4494,10 @@ textarea {
   }
 }
 
-.peer:checked ~ .peer-checked\:bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .peer:checked ~ .peer-checked\:text-primary {
@@ -4625,16 +4591,8 @@ textarea {
 }
 
 @media (min-width: 1280px) {
-  .xl\:w-8\/12 {
-    width: 66.666667%;
-  }
-
   .xl\:max-w-md {
     max-width: 28rem;
-  }
-
-  .xl\:max-w-screen-sm {
-    max-width: 640px;
   }
 }
 
