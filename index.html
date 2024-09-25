@@ -63,6 +63,7 @@
 </nav>
 <main class="flex flex-col overflow-y-scroll snap-y h-screen w-screen">
   <!--Presentation-->
+  <div class="scrollbar scrollbar-thumb-blue-600 scrollbar-thumb-rounded"></div>
   <div id="Presentation" class="hero min-h-screen snap-start">
     <div class="hero-content mx-3 flex-col lg:flex-row">
       <div class="prose-lg sm:prose-2xl">
@@ -103,10 +104,10 @@
   <div id="Diplomes" class="hero min-h-screen w-full md:w-1/2 m-auto shrink-0">
     <div class="hero-content snap-start flex-col">
       <div>
-        <h1 class="text-6xl font-poppins m-6 text-secondary">Diplomes</h1>
+        <h1 class="text-2xl md:text-6xl font-poppins md:m-6 text-secondary">Diplomes</h1>
       </div>
       <div>
-        <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+        <ul class="timeline timeline-snap-icon max-md:timeline-compact gap-y-2 timeline-vertical">
           <li>
             <div class="timeline-middle">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
@@ -115,11 +116,11 @@
                       clip-rule="evenodd"/>
               </svg>
             </div>
-            <div class="timeline-start timeline-box mb-10 md:text-end border-primary">
-              <time class="font-mono italic">2018-2021</time>
-              <div class="font-black">Baccalauréat STI2D</div>
-              <p>Lycée Branly</p>
-              <p>J'ai passé un bac technologique STI2d afin de pouvoir apprendre des concepts mécaniques, faire un peu
+            <div class="timeline-start timeline-box  md:text-end border-primary">
+                <time class="font-mono italic">2018-2021</time>
+                <p class="font-black ">Baccalauréat STI2D</p>
+              <p class="text-secondary">Lycée Branly</p>
+              <p class="prose-lg">J'ai passé un bac technologique STI2d afin de pouvoir apprendre des concepts mécaniques, faire un peu
                 de
                 CAO et du code.</p>
             </div>
@@ -135,14 +136,10 @@
               </svg>
             </div>
             <div class="timeline-end timeline-box border-primary">
-              <time class="font-mono italic">2021-2022</time>
-              <p class="text-lg font-black  inline-flex items-baseline">
-            <span class=""><img src="../daysui-september-portfolio/images/illustrations/diploma-svgrepo-com.png"
-                                alt="diplome" class="h-4 self-center mx-3"></span>
-                CAP Menuisier
-              </p>
-              <p>Compagnons du Tour de France</p>
-              <p>J'ai réalisé un apprentissage d'un an en menuiserie chez les compagnons du Tour de France. J'ai
+              <time class="font-mono italic ">2021-2022</time>
+              <p class="text-lg font-black ">CAP Menuisier</p>
+              <p class="text-secondary">Compagnons du Tour de France</p>
+              <p class="prose-lg">J'ai réalisé un apprentissage d'un an en menuiserie chez les compagnons du Tour de France. J'ai
                 beaucoup
                 aimé cette année ainsi que les compétences que j'ai apprises mais je ne souhaite pas faire ce beau
                 métier
@@ -162,15 +159,15 @@
             <div class="timeline-start mb-10 md:text-end timeline-box border-primary">
               <time class="font-mono italic">2023-2024</time>
               <div class="text-lg font-black">Développeur Web - RNCP niv 5 (bac + 2)</div>
-              <p class="text-lg  inline-flex items-baseline">
+              <p class="text-lg inline-flex items-baseline text-secondary">
             <span class=""><img src="../daysui-september-portfolio/images/illustrations/logoAfpa.png" alt="logoAfpa"
                                 class="h-4 self-center mx-3"></span>
                 AFPA
               </p>
-              <p>Formation 1258h : Analyses (Merise, UML) | Gestion de projets (Agile, SCRUM) | Langages (SQL, HTML5,
+              <p class="prose-lg">Formation 1258h : Analyses (Merise, UML) | Gestion de projets (Agile, SCRUM) | Langages (SQL, HTML5,
                 CSS3,
                 JavaScript, PHP)</p>
-              <p>BDD (MySQL) | Frameworks (Bootstrap, Symfony) | Logiciels (VS Code, Figma, Looping, Trello).</p>
+              <p class="prose-lg">BDD (MySQL) | Frameworks (Bootstrap, Symfony) | Logiciels (VS Code, Figma, Looping, Trello).</p>
             </div>
           </li>
         </ul>

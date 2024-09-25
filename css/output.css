@@ -3364,10 +3364,6 @@ html {
   z-index: 1;
 }
 
-.m-6 {
-  margin: 1.5rem;
-}
-
 .m-auto {
   margin: auto;
 }
@@ -3415,6 +3411,10 @@ html {
 
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
 }
 
 .block {
@@ -3531,6 +3531,10 @@ html {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -3571,10 +3575,43 @@ html {
   gap: 2rem;
 }
 
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.divide-y > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.divide-solid > :not([hidden]) ~ :not([hidden]) {
+  border-style: solid;
+}
+
+.divide-accent > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: var(--fallback-a,oklch(var(--a)/var(--tw-divide-opacity)));
+}
+
+.divide-amber-300 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(252 211 77 / var(--tw-divide-opacity));
+}
+
+.self-start {
+  align-self: flex-start;
 }
 
 .self-center {
@@ -3623,6 +3660,11 @@ html {
 .bg-neutral {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
 }
 
 .bg-gradient-to-r {
@@ -3745,6 +3787,11 @@ html {
 
 .text-transparent {
   color: transparent;
+}
+
+.text-secondary-content {
+  --tw-text-opacity: 1;
+  color: var(--fallback-sc,oklch(var(--sc)/var(--tw-text-opacity)));
 }
 
 .shadow {
@@ -4517,6 +4564,10 @@ textarea {
 }
 
 @media (min-width: 768px) {
+  .md\:m-6 {
+    margin: 1.5rem;
+  }
+
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
