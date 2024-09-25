@@ -63,17 +63,17 @@
 </nav>
 <main class="flex flex-col overflow-y-scroll snap-y h-screen w-screen">
   <!--Presentation-->
-  <div class="scrollbar scrollbar-thumb-blue-600 scrollbar-thumb-rounded"></div>
   <div id="Presentation" class="hero min-h-screen snap-start">
     <div class="hero-content mx-3 flex-col lg:flex-row">
-      <div class="prose-lg sm:prose-2xl">
-        <h2 class="font-poppins-black  mb-1">Vianney GOMAR,</h2>
-        <h1
-          class="font-poppins-bold  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-          Développeur Web Fullstack</h1>
-        <p class=" text-secondary font-poppins-black  mb-1">Lyon</p>
+      <div class="h-full">
+        <h1 class="h-full flex flex-col gap-y-2 sm:gap-y-8 sm:my-3">
+          <span class="text-2xl sm:text-4xl font-poppins-black font-bold ">Vianney GOMAR,</span>
+          <span
+            class=" text-2xl sm:text-6xl font-poppins-bold font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+            Développeur Web Fullstack</span>
+          <span class="text-2xl sm:text-4xl font-bold text-secondary font-poppins-bold  ">Lyon</span></h1>
 
-        <div class="font-poppins-medium my-4">
+        <div class="prose-lg sm:prose-2xl font-poppins-medium ">
           <p>Je suis un développeur web passionné, toujours curieux d'explorer les nouvelles technologies. Fort de mon
             expérience en développement d'ERP, je recherche activement un poste où je pourrai continuer à développer des
             solutions web performantes et intuitives.</p>
@@ -92,7 +92,7 @@
         <!--        </div>-->
       </div>
       <!--  Photo de profil  -->
-      <div class="block max-lg:hidden xl:max-w-md align-top">
+      <div class="block max-lg:hidden lg:max-w-md xl:max-w-lg align-top">
         <div class="avatar lg:m-10 transform transition-transform duration-300 hover:scale-110 ">
           <div class="mask mask-squircle">
             <img class="size-10" src="images/illustrations/profileid.jpg" alt="Photo de Vianney">
@@ -117,10 +117,11 @@
               </svg>
             </div>
             <div class="timeline-start timeline-box  md:text-end border-primary">
-                <time class="font-mono italic">2018-2021</time>
-                <p class="font-black ">Baccalauréat STI2D</p>
+              <time class="font-mono italic">2018-2021</time>
+              <p class="font-black ">Baccalauréat STI2D</p>
               <p class="text-secondary">Lycée Branly</p>
-              <p class="prose-lg">J'ai passé un bac technologique STI2d afin de pouvoir apprendre des concepts mécaniques, faire un peu
+              <p class="prose-lg">J'ai passé un bac technologique STI2d afin de pouvoir apprendre des concepts
+                mécaniques, faire un peu
                 de
                 CAO et du code.</p>
             </div>
@@ -139,7 +140,8 @@
               <time class="font-mono italic ">2021-2022</time>
               <p class="text-lg font-black ">CAP Menuisier</p>
               <p class="text-secondary">Compagnons du Tour de France</p>
-              <p class="prose-lg">J'ai réalisé un apprentissage d'un an en menuiserie chez les compagnons du Tour de France. J'ai
+              <p class="prose-lg">J'ai réalisé un apprentissage d'un an en menuiserie chez les compagnons du Tour de
+                France. J'ai
                 beaucoup
                 aimé cette année ainsi que les compétences que j'ai apprises mais je ne souhaite pas faire ce beau
                 métier
@@ -164,10 +166,12 @@
                                 class="h-4 self-center mx-3"></span>
                 AFPA
               </p>
-              <p class="prose-lg">Formation 1258h : Analyses (Merise, UML) | Gestion de projets (Agile, SCRUM) | Langages (SQL, HTML5,
+              <p class="prose-lg">Formation 1258h : Analyses (Merise, UML) | Gestion de projets (Agile, SCRUM) |
+                Langages (SQL, HTML5,
                 CSS3,
                 JavaScript, PHP)</p>
-              <p class="prose-lg">BDD (MySQL) | Frameworks (Bootstrap, Symfony) | Logiciels (VS Code, Figma, Looping, Trello).</p>
+              <p class="prose-lg">BDD (MySQL) | Frameworks (Bootstrap, Symfony) | Logiciels (VS Code, Figma, Looping,
+                Trello).</p>
             </div>
           </li>
         </ul>
@@ -371,51 +375,52 @@
             </div>
           </div>
         </div>
-      <!-- About Me Text -->
-      <article class="space-y-4 prose flex-grow">
-        <h3>✨ À Propos de Moi</h3>
-        <p>Bienvenue, je suis Vianney un développeur Fullstack de <img class="inline not-prose"
-                                                                       src="https://cdn-icons-png.flaticon.com/512/197/197560.png"
-                                                                       width="13"/> <b>Lyon,
-          France</b></p>
-        <p>Je suis passionné par la création de projets diverses. Voici quelques exemples :</p>
+        <!-- About Me Text -->
+        <article class="space-y-4 prose flex-grow">
+          <h3>✨ À Propos de Moi</h3>
+          <p>Bienvenue, je suis Vianney un développeur Fullstack de <img class="inline not-prose"
+                                                                         src="https://cdn-icons-png.flaticon.com/512/197/197560.png"
+                                                                         width="13"/> <b>Lyon,
+            France</b></p>
+          <p>Je suis passionné par la création de projets diverses. Voici quelques exemples :</p>
 
-        <ul>
-          <li><strong>Programmation</strong> : J'apprécie particulièrement de coder avec le framework
-            <strong>PHP</strong>
-            <a href="https://symfony.com/">Symfony</a> en raison de sa structure robuste et de ses puissants mécanismes
-            d'injection de dépendances.
-          </li>
-          <li><strong>Lumières Réactives</strong> : J'ai créé un système modulaire de lumières réactives qui se
-            synchronise avec la musique en utilisant
-            <a href="https://www.espressif.com/en/products/socs/esp32">ESP32</a>,
-            <a href="https://kno.wled.ge/">WLED</a>, et
-            <a href="https://ledfx.app/">LedFx</a>.
-          </li>
-          <li><strong>Services FOSS Auto-Hébergés</strong> : J'ai mis en place et gère des services FOSS que je
-            self-host avec
-            <a href="https://www.proxmox.com/en/">Proxmox</a> et
-            <a href="https://www.casaos.io/">CasaOS</a>.
-          </li>
-          <li><strong>Networking</strong> : J'utilise
-            <a href="https://openwrt.org/">OpenWrt</a> comme firmware de routeur FOSS.
-          </li>
-          <li><strong>Travail du Bois</strong> : J'ai également un grand intérêt pour le travail du bois, ayant étudié
-            chez "Les Compagnons du Tour de France."
-          </li>
-        </ul>
+          <ul>
+            <li><strong>Programmation</strong> : J'apprécie particulièrement de coder avec le framework
+              <strong>PHP</strong>
+              <a href="https://symfony.com/">Symfony</a> en raison de sa structure robuste et de ses puissants
+              mécanismes
+              d'injection de dépendances.
+            </li>
+            <li><strong>Lumières Réactives</strong> : J'ai créé un système modulaire de lumières réactives qui se
+              synchronise avec la musique en utilisant
+              <a href="https://www.espressif.com/en/products/socs/esp32">ESP32</a>,
+              <a href="https://kno.wled.ge/">WLED</a>, et
+              <a href="https://ledfx.app/">LedFx</a>.
+            </li>
+            <li><strong>Services FOSS Auto-Hébergés</strong> : J'ai mis en place et gère des services FOSS que je
+              self-host avec
+              <a href="https://www.proxmox.com/en/">Proxmox</a> et
+              <a href="https://www.casaos.io/">CasaOS</a>.
+            </li>
+            <li><strong>Networking</strong> : J'utilise
+              <a href="https://openwrt.org/">OpenWrt</a> comme firmware de routeur FOSS.
+            </li>
+            <li><strong>Travail du Bois</strong> : J'ai également un grand intérêt pour le travail du bois, ayant étudié
+              chez "Les Compagnons du Tour de France."
+            </li>
+          </ul>
 
-        <h4>🧡 Mes Passions</h4>
-        <ul class="flex-col columns-2">
-          <li>Technologie et logiciels</li>
-          <li>Self Hosting</li>
-          <li>Cybersécurité</li>
-          <li>Menuiserie</li>
-          <li>Électronique</li>
-        </ul>
-      </article>
+          <h4>🧡 Mes Passions</h4>
+          <ul class="flex-col columns-2">
+            <li>Technologie et logiciels</li>
+            <li>Self Hosting</li>
+            <li>Cybersécurité</li>
+            <li>Menuiserie</li>
+            <li>Électronique</li>
+          </ul>
+        </article>
+      </div>
     </div>
-  </div>
   </div>
 </main>
 <script src="js/app.js"></script>
