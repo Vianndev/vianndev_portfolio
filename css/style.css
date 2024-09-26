@@ -29,15 +29,15 @@
   }
 
   .review-card-header-avatar {
-    @apply avatar my-3 md:mx-auto;
+    @apply avatar my-2 md:mx-auto;
   }
 
   .review-card-header-avatar-image {
-    @apply mask mask-squircle w-12 md:w-24 lg:w-32;
+    @apply mask mask-squircle w-16 md:w-24 lg:w-32;
   }
 
   .review-card-header-text {
-    @apply md:text-center;
+    @apply md:text-center my-2;
   }
 
   .review-card-header-title {
