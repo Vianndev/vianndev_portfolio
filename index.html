@@ -101,7 +101,7 @@
       </div>
     </div>
   </div>
-  <div id="About_me" class="hero md:min-h-screen snap-start ">
+  <div id="About_me" class="hero lg:min-h-screen snap-start overflow-none">
     <div class="hero-content snap-start flex-col">
       <h2 class="text-4xl font-poppins-bold text-secondary text-center">À propos de moi</h2>
       <div id="section-about-me"
@@ -211,56 +211,82 @@
       </div>
     </div>
   </div>
-  <svg id="bg-wave-top" class="shrink-0 fill-accent w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover"
-       xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100'>
-    <path d='M0 0h1000v4H0z'></path>
-    <path d='M0 0h1000v80.8S550 100 500 100 0 80.8 0 80.8V0Z' opacity='.2'></path>
-    <path d='M0 0h1000v61.6S600 100 500 100 0 61.6 0 61.6V0Z' opacity='.3'></path>
-    <path d='M0 0h1000v42.4S650 100 500 100 0 42.4 0 42.4V0Z' opacity='.4'></path>
-    <path d='M0 0h1000v23.2S700 100 500 100 0 23.2 0 23.2V0Z' opacity='.5'></path>
-    <path d='M0 0v4s250 96 500 96 500-96 500-96V0H0Z'></path>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" class="fill-[#FCBF75] h-32 lg:h-64 bg-no-repeat  overflow-none" transform="scale(1, -1)" style="transform-origin: center">
+    <path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path>
+    <path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path>
+    <path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path>
+    <path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path>
   </svg>
-  <div id="Projects" class="bg-[#FCBF75] min-h-screen snap-start w-full flex-grow">
-    <div class="snap-start object-fill">
-      <h1 class="text-2xl md:text-6xl font-poppins mt-1 md:mb-6 text-[#562295] text-center">Projets</h1>
-      <div class="flex flex-col items-center xl:items-end xl:flex-row">
-        <div id="projects-item-bd" class="flex-grow w-10/12 xl:w-2/3"
-             onclick="openInNewTab('https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html');"
-             id="divBd">
-          <img src="./images/illustrations/bdd/animationbig2.webp" class="projects-item-img aspect-auto "
-               alt="no image">
+  <div id="Projects" class="snap-start bg-[#FCBF75] h-screen  w-full ">
+<!--    text-[#562295]-->
+    <h2 class="text-2xl md:text-6xl font-poppins-bold  font-bold my-8 text-[#562295] text-center">
+      Projets</h2>
+    <div
+      class="m-5 xl:mx-auto grid grid-cols-1 xl:grid-cols-10 xl:w-8/12 xl:align-middle  items-center md:justify-center xl:items-center gap-3 h-max ">
+      <div id="projects-item-bd" class="xl:col-span-7 min-w-full xl:my-auto"
+           onclick="openInNewTab('https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html');"
+           id="divBd">
+        <div class="carousel rounded-2xl w-full">
+          <div id="item1" class="carousel-item w-full">
+            <img
+              src="images/illustrations/bdd/Previews/Screen Shot 2024-09-26 at 12.51.08.png"
+              class="w-full"/>
+          </div>
+          <div id="item2" class="carousel-item w-full">
+            <img
+              src="images/illustrations/bdd/Previews/Screen Shot 2024-09-26 at 12.51.20.png"
+              class="w-full"/>
+          </div>
+          <div id="item3" class="carousel-item w-full">
+            <img
+              src="images/illustrations/bdd/Previews/Screen Shot 2024-09-26 at 12.51.20.png"
+              class="w-full"/>
+          </div>
+          <div id="item4" class="carousel-item w-full">
+            <img
+              src="images/illustrations/bdd/Previews/Screen Shot 2024-09-26 at 12.51.20.png"
+              class="w-full"/>
+          </div>
         </div>
-        <div class="projects-item-description flex-grow-0 w-8/12 xl:w-80 prose">
-          <h3 class="text-2xl md:text-4xl font-poppins font-black"><a
-            href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html"></a>Gestion de
-            location de Bandes dessinées
-          </h3>
-          <p class="text-xl md:text-2xl font-poppins font-bold">Application Web</p>
-          <!--          <div class="projects-itemDlanguages">-->
-          <!--            <button style="margin : 1%" class="shrink js-btn">Javascript <img-->
-          <!--              onclick="location.href='https://developer.mozilla.org/fr/docs/Web/JavaScript';"-->
-          <!--              value="Go to Javascript doumentation" src="https://www.svgrepo.com/show/341951/js.svg"-->
-          <!--              style="width: 18px; margin-left:0px; margin-right:3px; flex-direction: row-reverse;"></button>-->
-          <!--            <button style="margin : 1%" class="html-btn"-->
-          <!--                    onclick="location.href='https://developer.mozilla.org/fr/docs/Web/HTML';"-->
-          <!--                    value="Go to Html doumentation">Html-->
-          <!--              <img src="https://www.svgrepo.com/show/163149/html5.svg"-->
-          <!--                   style="width:18px; margin-left:0px; margin-right:10px; flex-direction: row-reverse;"></button>-->
-          <!--            <button style="margin : 1%" class="css-btn">Css <img-->
-          <!--              onclick="location.href='https://developer.mozilla.org/fr/docs/Web/Css';"-->
-          <!--              value="Go to Css doumentation"-->
-          <!--              src="https://www.svgrepo.com/show/102011/css-3.svg"-->
-          <!--              style="width:18px; margin-left:0px; margin-right:3px; flex-direction: row-reverse;"></button>-->
-          <!--          </div>-->
-          <p class="prose-xl">Site responsif de gestion de location de bandes dessinées créé lors de ma formation (sans base de
-            données).
-            Utilisation de l'API d'Open Library pour auto-compléter les informations et la couverture lors de
-            l'ajout
-            d'un livre.
-          </p>
+        <div class="flex w-full justify-center gap-2 py-2">
+          <a href="#item1" class="btn btn-xs">1</a>
+          <a href="#item2" class="btn btn-xs">2</a>
+          <a href="#item3" class="btn btn-xs">3</a>
+          <a href="#item4" class="btn btn-xs">4</a>
         </div>
       </div>
+      <div class="projects-item-description min-w-40 xl:min-w-96 prose xl:col-span-3">
+        <h3 class="text-2xl md:text-4xl font-poppins font-black"><a
+          href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html"></a>Gestion de
+          location de Bandes dessinées
+        </h3>
+        <p class="text-xl md:text-2xl font-poppins font-bold">Application Web</p>
+        <p class="prose-xl">Site responsif de gestion de location de bandes dessinées créé lors de ma formation (sans
+          base
+          de
+          données).
+          Utilisation de l'API d'Open Library pour auto-compléter les informations et la couverture lors de
+          l'ajout
+          d'un livre.
+        </p>
+        <a class="text-secondary  font-poppins-bold font-bold">Voir le site &#8599</a>
+      </div>
     </div>
+    <!--          <img src="./images/illustrations/bdd/animationbig2.webp" class="projects-item-img aspect-auto rounded-2xl "-->
+    <!--               alt="no image">-->
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" class="fill-[#FCBF75] w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover overflow-visible"><path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path><path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path><path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path><path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path></svg>
+<!--    <svg id="bg-wave-top" class="fill-[#FCBF75] w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover overflow-visible"-->
+<!--         xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100'>-->
+<!--      <path d='M0 0h1000v4H0z'></path>-->
+<!--      <path d='M0 0h1000v80.8S550 100 500 100 0 80.8 0 80.8V0Z' opacity='.2'></path>-->
+<!--      <path d='M0 0h1000v61.6S600 100 500 100 0 61.6 0 61.6V0Z' opacity='.3'></path>-->
+<!--      <path d='M0 0h1000v42.4S650 100 500 100 0 42.4 0 42.4V0Z' opacity='.4'></path>-->
+<!--      <path d='M0 0h1000v23.2S700 100 500 100 0 23.2 0 23.2V0Z' opacity='.5'></path>-->
+<!--      <path d='M0 0v4s250 96 500 96 500-96 500-96V0H0Z'></path>-->
+<!--    </svg>-->
+  </div>
+  </div>
   </div>
   </div>
   <div id="Reviews" class="hero md:min-h-screen snap-start flex-col flex-grow overflow-visible">
@@ -397,7 +423,7 @@
       </div>
     </div>
   </div>
-  <div id="Diplomes" class="hero min-h-screen w-full shrink-0 overflow-visible">
+  <div id="Diplomes" class="hero min-h-screen w-full  overflow-visible">
     <div class="hero-content snap-start flex-col w-full md:w-1/2 m-auto">
       <div>
         <h1 class="text-2xl md:text-6xl font-poppins md:m-6 text-secondary">Diplomes</h1>
