@@ -20,6 +20,7 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+  <script src="js/app.js"></script>
 </head>
 
 <body class="overflow-x-none">
@@ -103,7 +104,7 @@
   </div>
   <div id="About_me" class="hero lg:min-h-screen snap-start overflow-none">
     <div class="hero-content snap-start flex-col">
-      <h2 class="text-4xl font-poppins-bold text-secondary text-center">À propos de moi</h2>
+      <h2 class="section-title">À propos de moi</h2>
       <div id="section-about-me"
            class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start lg:items-center px-4 lg:px-20 py-10 grow">
         <!-- Profile Image -->
@@ -211,22 +212,24 @@
       </div>
     </div>
   </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" class="fill-[#FCBF75] h-32 lg:h-64 bg-no-repeat  overflow-none" transform="scale(1, -1)" style="transform-origin: center">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"
+       class="fill-primary-content h-32 lg:h-64 bg-no-repeat  overflow-none" transform="scale(1, -1)"
+       style="transform-origin: center">
     <path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path>
     <path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path>
     <path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path>
     <path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path>
   </svg>
-  <div id="Projects" class="snap-start bg-[#FCBF75] h-screen  w-full ">
-<!--    text-[#562295]-->
+  <div id="Projects" class="snap-start bg-primary-content h-screen  w-full ">
+    <!--    text-[#562295]-->
     <h2 class="text-2xl md:text-6xl font-poppins-bold  font-bold my-8 text-[#562295] text-center">
       Projets</h2>
     <div
       class="m-5 xl:mx-auto grid grid-cols-1 xl:grid-cols-10 xl:w-8/12 xl:align-middle  items-center md:justify-center xl:items-center gap-3 h-max ">
-      <div id="projects-item-bd" class="xl:col-span-7 min-w-full xl:my-auto"
+      <div id="projects-item-bd" class="xl:col-span-7 min-w-full xl:my-auto "
            onclick="openInNewTab('https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html');"
            id="divBd">
-        <div class="carousel rounded-2xl w-full">
+        <div class="carousel rounded-2xl w-full drop-shadow-2xl">
           <div id="item1" class="carousel-item w-full">
             <img
               src="images/illustrations/bdd/Previews/Screen Shot 2024-09-26 at 12.51.08.png"
@@ -275,23 +278,20 @@
     <!--          <img src="./images/illustrations/bdd/animationbig2.webp" class="projects-item-img aspect-auto rounded-2xl "-->
     <!--               alt="no image">-->
   </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" class="fill-[#FCBF75] w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover overflow-visible"><path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path><path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path><path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path><path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path></svg>
-<!--    <svg id="bg-wave-top" class="fill-[#FCBF75] w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover overflow-visible"-->
-<!--         xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100'>-->
-<!--      <path d='M0 0h1000v4H0z'></path>-->
-<!--      <path d='M0 0h1000v80.8S550 100 500 100 0 80.8 0 80.8V0Z' opacity='.2'></path>-->
-<!--      <path d='M0 0h1000v61.6S600 100 500 100 0 61.6 0 61.6V0Z' opacity='.3'></path>-->
-<!--      <path d='M0 0h1000v42.4S650 100 500 100 0 42.4 0 42.4V0Z' opacity='.4'></path>-->
-<!--      <path d='M0 0h1000v23.2S700 100 500 100 0 23.2 0 23.2V0Z' opacity='.5'></path>-->
-<!--      <path d='M0 0v4s250 96 500 96 500-96 500-96V0H0Z'></path>-->
-<!--    </svg>-->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"
+       class="fill-primary-content w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover overflow-visible">
+    <path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path>
+    <path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path>
+    <path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path>
+    <path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path>
+  </svg>
   </div>
   </div>
   </div>
   </div>
   <div id="Reviews" class="hero md:min-h-screen snap-start flex-col flex-grow overflow-visible">
     <div class="hero-content snap-start flex-col h-full">
-      <h1 class="text-2xl md:text-6xl font-poppins mt-1 md:mb-6 text-secondary text-center">Recommandations</h1>
+      <h2 class="section-title">Recommandations</h2>
       <div class="form-control w-52 mx-auto">
         <label class="label cursor-pointer">
           <span class="label-text">Données</span>
@@ -300,122 +300,127 @@
         </label>
       </div>
       <div id="review_given_vincent"
-           class="flex review_given card lg:card-side h-full shadow-xl  m-auto my-auto  rounded-xl overflow-hidden">
-        <div class="bg-gray-400 flex flex-row md:flex-col md:justify-center align-middle justify-around ">
-          <div class="avatar my-3 md:mx-auto">
-            <div class="mask mask-squircle w-12 md:w-24">
-              <img class="mx-auto" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"/>
+           class="review_given review-card h-full">
+        <div class="review-card-header">
+          <div class="review-card-header-avatar">
+            <div class="review-card-header-avatar-image">
+              <img class="mx-auto" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
             </div>
           </div>
-          <div class="md:text-center">
-            <h3 class="text-3xl">Vincent Amstoutz</h3>
+          <div class="review-card-header-text">
+            <h3 class="review-card-header-title font-poppins-medium">Vincent Amstoutz</h3>
             <p>PHP/Symfony Software engineer</p>
             <p>Sigedi</p>
           </div>
         </div>
-        <div class="bg-neutral card-body items-center text-center "><p class="prose">
-          <a class="underline-hover not-prose" href="#">
-            <span>J'ai pu réaliser mon stage de fin d'études avec Vincent.</span>
-          </a>
-          Dès le début, il m'a confié des tâches pertinentes qui m'ont permis de comprendre le fonctionnement du projet
-          et m'a fourni des ressources pour me former au clean code et à d'autres bonnes pratiques.
-        </p>
+        <div class="bg-secondary-content card-body items-center">
+          <article class="prose">
+            <p>
+              <a class="underline-hover not-prose" href="#">
+                <span>J'ai pu réaliser mon stage de fin d'études avec Vincent.</span>
+              </a>
+              Dès le début, il m'a confié des tâches pertinentes qui m'ont permis de comprendre le fonctionnement du
+              projet
+              et m'a fourni des ressources pour me former au clean code et à d'autres bonnes pratiques.
+            </p>
 
-          <p class="prose">
-            Ses feedbacks, toujours pertinents et ouverts sur tous les sujets, étaient donnés avec respect et étaient
-            réellement enrichissants, mettant toujours un point d'accent sur la reconnaissance des efforts réalisés par
-            chacun.
-          </p>
+            <p>
+              Ses feedbacks, toujours pertinents et ouverts sur tous les sujets, étaient donnés avec respect et étaient
+              réellement enrichissants, mettant toujours un point d'accent sur la reconnaissance des efforts réalisés
+              par
+              chacun.
+            </p>
 
-          <p class="prose">
-            <a class="underline-hover not-prose" href="#">
-              <span>Vincent fait preuve d'une bienveillance constante</span>
-            </a> et d'un engagement pédagogique remarquable envers toute son équipe.
-          </p>
+            <p>
+              <a class="underline-hover not-prose" href="#">
+                <span>Vincent fait preuve d'une bienveillance constante</span>
+              </a> et d'un engagement pédagogique remarquable envers toute son équipe.
+            </p>
 
-          <p class="prose">
-            Son approche de gestion de projet, caractérisée par des améliorations continues sur de nombreux aspects, des
-            prises de feedback régulières et la formation de toute l'équipe, facilite réellement le travail de chacun,
-            avec de nombreuses actions s'incrémentant au fil du temps.
-            <a class="underline-hover not-prose" href="#">
-              <span>Cela crée un environnement de travail agréable</span>
-            </a>, tant sur le plan technique que social.
-          </p>
+            <p>
+              Son approche de gestion de projet, caractérisée par des améliorations continues sur de nombreux aspects,
+              des prises de feedback régulières et la formation de toute l'équipe, facilite réellement le travail de
+              chacun,
+              avec de nombreuses actions s'incrémentant au fil du temps.
+              <a class="underline-hover not-prose" href="#">
+                <span>Cela crée un environnement de travail agréable</span>
+              </a>, tant sur le plan technique que social.
+            </p>
 
-          <p class="prose">
-            Sur le plan technique, tous les outils, ressources et bonnes pratiques mis en place, accompagnés par le
-            suivi de son équipe, lui permettent sans aucun doute de mener un projet à bien en faisant les meilleurs
-            compromis et en étant future-proof sur de nombreux aspects.
-          </p>
-
-          <p class="prose">
-            <a class="underline-hover not-prose" href="#">
-              <span>Travailler au sein de son équipe a été une expérience très enrichissante</span>
-            </a> et m'a beaucoup fait grandir techniquement grâce à ses conseils. C'est un aspect que je garderai avec
-            moi, et
-            <a class="underline-hover not-prose" href="#">
-              <span>j'aurais de même aimé continuer à travailler avec lui.</span>
-            </a>
-          </p>
+            <p>Sur le plan technique, tous les outils, ressources et bonnes pratiques mis en place, accompagnés par le
+              suivi de son équipe, lui permettent sans aucun doute de mener un projet à bien en faisant les meilleurs
+              compromis et en étant future-proof sur de nombreux aspects.</p>
+            <p>
+              <a class="underline-hover not-prose" href="#">
+                <span>Travailler au sein de son équipe a été une expérience très enrichissante</span>
+              </a> et m'a beaucoup fait grandir techniquement grâce à ses conseils. C'est un aspect que je garderai avec
+              moi, et
+              <a class="underline-hover not-prose" href="#">
+                <span>j'aurais de même aimé continuer à travailler avec lui.</span>
+              </a>
+            </p>
+          </article>
         </div>
       </div>
       <div id="review_received_vincent"
-           class="review_received flex card lg:card-side shadow-xl  m-auto my-auto  rounded-xl overflow-hidden">
-        <div class="bg-gray-400 flex flex-row md:flex-col md:justify-center align-middle justify-around ">
-          <div class="avatar my-3 md:mx-auto">
-            <div class="mask mask-squircle w-12 md:w-24">
-              <img class="mx-auto" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"/>
+           class="review_received review-card">
+        <div class="review-card-header">
+          <div class="review-card-header-avatar">
+            <div class="review-card-header-avatar-image">
+              <img class="mx-auto" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
             </div>
           </div>
-          <div class="md:text-center">
-            <h3 class="text-3xl">Vincent Amstoutz</h3>
+          <div class="review-card-header-text">
+            <h3 class="review-card-header-title font-poppins-medium">Vincent Amstoutz</h3>
             <p>PHP/Symfony Software engineer</p>
             <p>Sigedi</p>
           </div>
         </div>
-        <div class="bg-neutral card-body items-center text-center ">
-          <p class="prose">
-            Vianney a été un excellent stagiaire ! Au départ timide et réservé avec l'équipe dev et les collègues, il a
-            su
-            avec le temps se révéler et s'améliorer en se basant sur
-            <a class="underline-hover not-prose" href="#">
-              <span>les revues de codes</span>
-            </a>,
-            <a class="underline-hover not-prose" href="#">
-              <span>les ressources partagées</span>
-            </a>, sa détermination et ses initiatives.
-          </p>
+        <div class="bg-secondary-content card-body items-center">
+          <article class="prose">
+            <p>
+              Vianney a été un excellent stagiaire ! Au départ timide et réservé avec l'équipe dev et les collègues, il
+              a
+              su
+              avec le temps se révéler et s'améliorer en se basant sur
+              <a class="underline-hover not-prose" href="#">
+                <span>les revues de codes</span>
+              </a>,
+              <a class="underline-hover not-prose" href="#">
+                <span>les ressources partagées</span>
+              </a>, sa détermination et ses initiatives.
+            </p>
 
-          <p class="prose">
-            Il a finit par
-            <a class="underline-hover not-prose" href="#">
-              <span>intégrer pleinement l'équipe</span>
-            </a> et être moteur sur certains sujets à son niveau. Notamment,
-            <a class="underline-hover not-prose" href="#">
-              <span>il a su faire preuve d'une organisation, une culture gestion de projet et des bonnes pratiques d’ingénierie</span>
-            </a> qui sont rares à son niveau de formation et d'expérience.
-          </p>
+            <p>
+              Il a finit par
+              <a class="underline-hover not-prose" href="#">
+                <span>intégrer pleinement l'équipe</span>
+              </a> et être moteur sur certains sujets à son niveau. Notamment,
+              <a class="underline-hover not-prose" href="#">
+                <span>il a su faire preuve d'une organisation, une culture gestion de projet et des bonnes pratiques d’ingénierie</span>
+              </a> qui sont rares à son niveau de formation et d'expérience.
+            </p>
 
-          <p class="prose">
-            Il est
-            <a class="underline-hover not-prose" href="#">
-              <span>curieux</span>
-            </a>,
-            <a class="underline-hover not-prose" href="#">
-              <span>force de proposition</span>
-            </a> et
-            <a class="underline-hover not-prose" href="#">
-              <span>creuse le sujet à fond</span>
-            </a> dès qu'il a un doute et qu'il estime que le sujet est important pour le contexte du projet et des
-            compétences métiers.
-          </p>
+            <p>
+              Il est
+              <a class="underline-hover not-prose" href="#">
+                <span>curieux</span>
+              </a>,
+              <a class="underline-hover not-prose" href="#">
+                <span>force de proposition</span>
+              </a> et
+              <a class="underline-hover not-prose" href="#">
+                <span>creuse le sujet à fond</span>
+              </a> dès qu'il a un doute et qu'il estime que le sujet est important pour le contexte du projet et des
+              compétences métiers.
+            </p>
 
-          <p class="prose">
-            <a class="underline-hover not-prose" href="#">
-              <span>J'aurais aimé pouvoir continuer avec lui</span>
-            </a> et lui souhaite une bonne carrière dans le secteur. Au plaisir ! 🙂
-          </p>
-
+            <p>
+              <a class="underline-hover not-prose" href="#">
+                <span>J'aurais aimé pouvoir continuer avec lui</span>
+              </a> et lui souhaite une bonne carrière dans le secteur. Au plaisir ! 🙂
+            </p>
+          </article>
           <div class="card-actions pt-2">
             <button class="btn btn-primary">Voir sur Linkedin</button>
           </div>
@@ -426,7 +431,7 @@
   <div id="Diplomes" class="hero min-h-screen w-full  overflow-visible">
     <div class="hero-content snap-start flex-col w-full md:w-1/2 m-auto">
       <div>
-        <h1 class="text-2xl md:text-6xl font-poppins md:m-6 text-secondary">Diplomes</h1>
+        <h1 class="section-title">Diplomes</h1>
       </div>
       <div>
         <ul class="timeline timeline-snap-icon max-md:timeline-compact gap-y-2 timeline-vertical">
@@ -438,7 +443,7 @@
                       clip-rule="evenodd"/>
               </svg>
             </div>
-            <div class="timeline-start timeline-box  md:text-end border-primary">
+            <div class="timeline-start timeline-box shadow-xl md:text-end border-primary">
               <time class="font-mono italic">2018-2021</time>
               <p class="font-black ">Baccalauréat STI2D</p>
               <p class="text-secondary">Lycée Branly</p>
@@ -501,6 +506,5 @@
     </div>
   </div>
 </main>
-<script src="js/app.js"></script>
 </body>
 </html>
