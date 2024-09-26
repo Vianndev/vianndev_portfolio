@@ -3902,24 +3902,8 @@ html {
   }
 }
 
-.static {
-  position: static;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.relative {
-  position: relative;
-}
-
 .z-\[2\] {
   z-index: 2;
-}
-
-.z-\[1\] {
-  z-index: 1;
 }
 
 .m-5 {
@@ -4135,6 +4119,10 @@ html {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-y-0 {
+  row-gap: 0px;
 }
 
 .gap-y-2 {
@@ -4391,7 +4379,7 @@ html {
 }
 
 .section-title {
-  margin-top: 2rem;
+  margin-top: 0.75rem;
   margin-bottom: 2rem;
   text-align: center;
   font-family: Poppins Bold, sans-serif;
