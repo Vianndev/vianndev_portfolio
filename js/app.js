@@ -1,3 +1,12 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const is_review_received_checkbox = document.getElementById('is_review_received');
+  // Initialize on page load
+  toggleReviews(is_review_received_checkbox);
+
+// Add event listener for the checkbox
+  is_review_received_checkbox.addEventListener('change', () => toggleReviews(is_review_received_checkbox));
+});
+
 function toggleReviews(is_review_received_checkbox) {
   const reviewGiven = Array.from(document.getElementsByClassName('review_given'));
   const reviewReceived = Array.from(document.getElementsByClassName('review_received'));
@@ -11,12 +20,3 @@ function toggleReviews(is_review_received_checkbox) {
   reviewGiven.forEach(element => element.classList.remove('!hidden'));
   reviewReceived.forEach(element => element.classList.add('!hidden'));
 }
-document.addEventListener("DOMContentLoaded", function() {
-  const is_review_received_checkbox = document.getElementById('is_review_received');
-  // Initialize on page load
-  toggleReviews(is_review_received_checkbox);
-
-// Add event listener for the checkbox
-  is_review_received_checkbox.addEventListener('change', () => toggleReviews(is_review_received_checkbox));
-});
-

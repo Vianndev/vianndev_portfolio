@@ -1,18 +1,16 @@
 <!doctype html>
-<html class="no-js scroll-smooth" lang="" data-theme="light">
-
+<html class="scroll-smooth" lang="" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Vianney GOMAR | Développeur Web Fullstack à Lyon</title>
   <link rel="stylesheet" href="css/output.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+  <meta name="description" content="Je suis Vianney GOMAR, développeur web fullstack à Lyon. Passionné par les nouvelles technologies, je conçois des solutions web performantes et intuitives.">
+  <meta property="og:title" content="Vianney GOMAR | Développeur Web Fullstack à Lyon">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vianndev.github.io/vianndev_portfolio">
+  <meta property="og:image" content="https://vianndev.github.io/vianndev_portfolio/images/images/illustrations/profileid.jpg">
+  <meta property="og:image:alt" content="Photo de Vianney GOMAR, développeur web fullstack à Lyon">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
@@ -22,10 +20,8 @@
   <meta name="theme-color" content="#fafafa">
   <script src="js/app.js"></script>
 </head>
-
-<body class="overflow-x-none">
+<body class="overflow-x-none" style="min-height: 100vh; display: flex; flex-direction: column">
 <!-- Navbar-->
-<nav>
   <div class="navbar bg-base-100">
     <div class="navbar-start">
       <div class="dropdown">
@@ -44,7 +40,7 @@
           </svg>
         </div>
         <ul tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[2] mt-3 w-52 p-2 shadow">
           <li><a>Item 1</a></li>
           <li><a>Item 3</a></li>
         </ul>
@@ -52,7 +48,7 @@
       <a class="btn btn-ghost text-xl "><span class="text-primary">Vianney</span> GOMAR</a>
     </div>
     <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
+      <ul class="menu menu-horizontal px-1 ">
         <li><a>Item 1</a></li>
         <li><a>Item 3</a></li>
       </ul>
@@ -61,8 +57,7 @@
       <a class="btn">Button</a>
     </div>
   </div>
-</nav>
-<main class="flex flex-col overflow-y-scroll snap-y h-screen w-screen">
+<div class="flex flex-col overflow-y-scroll snap-y h-screen w-screen">
   <!--Presentation-->
   <div id="Presentation" class="hero min-h-screen snap-start">
     <div class="hero-content mx-3 flex-col lg:flex-row">
@@ -220,14 +215,14 @@
     <path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path>
     <path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path>
   </svg>
-  <div id="Projects" class="snap-start bg-primary-content h-screen  w-full ">
+  <div id="Projects" class="snap-start bg-primary-content  w-full ">
     <!--    text-[#562295]-->
     <h2 class="text-2xl md:text-6xl font-poppins-bold  font-bold my-8 text-[#562295] text-center">
       Projets</h2>
     <div
       class="m-5 xl:mx-auto grid grid-cols-1 xl:grid-cols-10 xl:w-8/12 xl:align-middle  items-center md:justify-center xl:items-center gap-3 h-max ">
       <div id="projects-item-bd" class="xl:col-span-7 min-w-full xl:my-auto ">
-        <div class="carousel rounded-2xl w-full drop-shadow-2xl">
+        <div class="carousel rounded-2xl w-full drop-shadow-2xl overflow-hidden">
           <div id="item1" class="carousel-item w-full">
             <img
               src="images/illustrations/bdd/Previews/bd-front-preview.png"
@@ -246,11 +241,11 @@
           <div id="item4" class="carousel-item w-full">
             <img
               src="images/illustrations/bdd/Previews/bd-phone-preview-resized.png"
-              class="aspect-auto"/>
+              class="w-full"/>
           </div>
         </div>
         <div class="flex w-full justify-center gap-2 py-2">
-          <a href="#item1" class="btn btn-xs">1</a>
+          <a href="#item1" target="_self" class="btn btn-xs ">1</a>
           <a href="#item2" class="btn btn-xs">2</a>
           <a href="#item3" class="btn btn-xs">3</a>
           <a href="#item4" class="btn btn-xs">4</a>
@@ -285,10 +280,6 @@
     <path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path>
     <path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path>
   </svg>
-  </div>
-  </div>
-  </div>
-  </div>
   <div id="Reviews" class="hero md:min-h-screen snap-start flex-col flex-grow overflow-visible">
     <div class="hero-content snap-start flex-col h-full">
       <h2 class="section-title">Recommandations</h2>
@@ -379,10 +370,7 @@
         <div class="bg-secondary-content card-body items-center">
           <article class="prose">
             <p>
-              Vianney a été un excellent stagiaire ! Au départ timide et réservé avec l'équipe dev et les collègues, il
-              a
-              su
-              avec le temps se révéler et s'améliorer en se basant sur
+              Vianney a été un excellent stagiaire ! Au départ timide et réservé avec l'équipe dev et les collègues, il a su avec le temps se révéler et s'améliorer en se basant sur
               <a class="underline-hover not-prose" href="#">
                 <span>les revues de codes</span>
               </a>,
@@ -505,6 +493,6 @@
       </div>
     </div>
   </div>
-</main>
+</div>
 </body>
 </html>
