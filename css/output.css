@@ -4773,6 +4773,12 @@ html {
   }
 }
 
+@media not all and (min-width: 768px) {
+  .max-md\:hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:my-3 {
     margin-top: 0.75rem;
@@ -4805,6 +4811,14 @@ html {
 
   .md\:w-96 {
     width: 24rem;
+  }
+
+  .md\:max-w-md {
+    max-width: 28rem;
+  }
+
+  .md\:max-w-sm {
+    max-width: 24rem;
   }
 
   .md\:justify-center {
