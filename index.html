@@ -23,8 +23,8 @@
   <meta content="#fafafa" name="theme-color">
   <script src="js/app.js"></script>
 </head>
-<nav>
-  <div class="navbar bg-base-100 shadow">
+<nav data-theme="cupcake">
+  <div class="navbar bg-base-100 shadow-sm">
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -60,11 +60,9 @@
     </div>
   </div>
 </nav>
-<body class="overflow-x-none" style="min-height: 100vh; display: flex; flex-direction: column">
-<!-- Navbar-->
-  <!--Presentation-->
+<body class="overflow-x-none min-h-svh flex flex-col">
 <div class="flex flex-col overflow-y-scroll snap-y h-max w-screen">
-  <div id="Presentation" class="hero min-h-screen snap-start">
+  <div data-theme="cupcake" id="Presentation" class="hero min-h-screen snap-start">
     <div class="hero-content mx-3 flex-col lg:flex-row">
       <div class="h-full">
         <h1 class="h-full flex flex-col gap-y-2 sm:gap-y-8 sm:my-3">
@@ -102,7 +100,7 @@
       </div>
     </div>
   </div>
-  <div class="lg:min-h-screen snap-start overflow-none" id="About_me">
+  <div data-theme="cupcake" class="lg:min-h-screen snap-start overflow-none" id="About_me">
     <div class=" snap-start flex flex-col">
       <h2 class="section-title">À propos de moi</h2>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start lg:items-center px-4 lg:px-20 grow"
@@ -212,6 +210,9 @@
       </div>
     </div>
   </div>
+<!--  <div class="bg-no-repeat bg-cover overflow-visible bg-custom-wave w-full fill-primary"></div>-->
+  <svg class=" fill-primary-content w-full bg-no-repeat bg-cover overflow-visible -z-1" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' transform="scale(1, -1)"
+       style="transform-origin: center"><path d='M0 0v99.7C62 69 122.4 48.7 205 66c83.8 17.6 160.5 20.4 240-12 54-22 110-26 173-10a392.2 392.2 0 0 0 222-5c55-17 110.3-36.9 160-27.2V0H0Z' opacity='.5'></path><path d='M0 0v74.7C62 44 122.4 28.7 205 46c83.8 17.6 160.5 25.4 240-7 54-22 110-21 173-5 76.5 19.4 146.5 23.3 222 0 55-17 110.3-31.9 160-22.2V0H0Z'></path></svg>
   <div class="snap-start bg-primary-content  w-full " id="Projects">
     <!--    text-[#562295]-->
     <h2 class="text-2xl md:text-6xl font-poppins-bold  font-bold my-8 text-[#562295] text-center">
