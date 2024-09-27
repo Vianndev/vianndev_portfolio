@@ -41,16 +41,23 @@
           </div>
           <ul tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[2] mt-3 w-52 p-2 shadow">
-            <li><a>Item 1</a></li>
-            <li><a>Item 3</a></li>
+            <li><a href="#Presentation">Présentation</a></li>
+            <li><a href="#section-about-me">À propos de moi</a></li>
+            <li><a href="#Projects">Projets</a></li>
+            <li><a href="#Reviews">Recommandations</a></li>
+            <li><a href="#Diplomes">Diplômes</a></li>
           </ul>
+
         </div>
         <a class="btn btn-ghost text-xl "><span class="text-primary">Vianney</span> GOMAR</a>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 ">
-          <li><a>Item 1</a></li>
-          <li><a>Item 3</a></li>
+          <li><a href="#Presentation">Présentation</a></li>
+          <li><a href="#section-about-me">À propos de moi</a></li>
+          <li><a href="#Projects">Projets</a></li>
+          <li><a href="#Reviews">Recommandations</a></li>
+          <li><a href="#Diplomes">Diplômes</a></li>
         </ul>
       </div>
       <div class="navbar-end">
@@ -209,7 +216,7 @@
       </div>
     </div>
   </div>
-  <div class="relative snap-start bg-primary-content  w-full overflow-visible z-20" id="Projects">
+  <div class="relative snap-center bg-primary-content  w-full overflow-visible z-20" id="Projects">
 <!--    The svg needs the be absolute and his parents relative.It is flipped thanks to transform center and scale-->
     <svg  class="fill-primary-content w-full bg-no-repeat bg-cover overflow-visible absolute bottom-full "
           xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 30' transform="scale(1, -1)"
@@ -420,7 +427,7 @@
     </div>
   </div>
   <div class="h-full" id="Diplomes">
-    <div class="snap-start flex flex-col h-full w-full w-10/12 md:w-1/2 m-auto">
+    <div class="snap-start flex flex-col h-full  w-10/12 md:w-1/2 m-auto">
       <div>
         <h1 class="section-title">Diplomes</h1>
       </div>
@@ -433,10 +440,10 @@
                     fill-rule="evenodd"/>
             </svg>
           </div>
-          <div class="timeline-start mb-10 md:text-end timeline-box border-primary">
+          <div class="timeline-start bg-secondary-content shadow-xl mb-10 md:text-end timeline-box ">
             <time class="font-mono italic">2023-2024</time>
-            <div class="text-lg font-black">Développeur Web - RNCP niv 5 (bac + 2)</div>
-            <p class="text-lg inline-flex items-baseline text-secondary">
+            <div class="prose-lg font-black">Développeur Web - RNCP niv 5 (bac + 2)</div>
+            <p class="font-size-18 inline-flex items-baseline text-primary">
             <span class=""><img alt="logoAfpa" class="h-4 self-center mx-3"
                                 src="images/illustrations/logoAfpa.png"></span>
               AFPA
@@ -459,11 +466,11 @@
                     fill-rule="evenodd"/>
             </svg>
           </div>
-          <div class="timeline-end timeline-box border-primary">
+          <div class="timeline-end bg-secondary-content shadow-xl timeline-box  ">
             <time class="font-mono italic ">2021-2022</time>
-            <p class="text-lg font-black ">CAP Menuisier</p>
-            <p class="text-secondary">Compagnons du Tour de France</p>
-            <p class="prose-lg">J'ai réalisé un apprentissage d'un an en menuiserie chez les compagnons du Tour de
+            <p class="prose-lg font-black ">CAP Menuisier</p>
+            <p class="prose-lg text-primary">Compagnons du Tour de France</p>
+            <p class="prose-lg ">J'ai réalisé un apprentissage d'un an en menuiserie chez les compagnons du Tour de
               France. J'ai
               beaucoup
               aimé cette année ainsi que les compétences que j'ai apprises mais je ne souhaite pas faire ce beau
@@ -474,17 +481,17 @@
         </li>
         <li>
           <hr>
-          <div class="timeline-middle">
+          <div class="timeline-middle bg-secondary-content">
             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path clip-rule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
                     fill-rule="evenodd"/>
             </svg>
           </div>
-          <div class="timeline-start timeline-box shadow-xl md:text-end border-primary">
+          <div class="timeline-start bg-secondary-content timeline-box shadow-xl md:text-end ">
             <time class="font-mono italic">2018-2021</time>
-            <p class="font-black ">Baccalauréat STI2D</p>
-            <p class="text-secondary">Lycée Branly</p>
+            <p class="prose-lg font-black ">Baccalauréat STI2D</p>
+            <p class="prose-lg text-primary">Lycée Branly</p>
             <p class="prose-lg">J'ai passé un bac technologique STI2d afin de pouvoir apprendre des concepts
               mécaniques, faire un peu
               de
