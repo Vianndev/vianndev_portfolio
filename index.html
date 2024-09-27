@@ -1,27 +1,29 @@
 <!doctype html>
-<html class="scroll-smooth" lang="" data-theme="light">
+<html class="scroll-smooth" data-theme="light" lang="">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>Vianney GOMAR | Développeur Web Fullstack à Lyon</title>
-  <link rel="stylesheet" href="css/output.css">
-  <meta name="description" content="Je suis Vianney GOMAR, développeur web fullstack à Lyon. Passionné par les nouvelles technologies, je conçois des solutions web performantes et intuitives.">
-  <meta property="og:title" content="Vianney GOMAR | Développeur Web Fullstack à Lyon">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://vianndev.github.io/vianndev_portfolio">
-  <meta property="og:image" content="https://vianndev.github.io/vianndev_portfolio/images/images/illustrations/profileid.jpg">
-  <meta property="og:image:alt" content="Photo de Vianney GOMAR, développeur web fullstack à Lyon">
+  <link href="css/output.css" rel="stylesheet">
+  <meta
+    content="Je suis Vianney GOMAR, développeur web fullstack à Lyon. Passionné par les nouvelles technologies, je conçois des solutions web performantes et intuitives."
+    name="description">
+  <meta content="Vianney GOMAR | Développeur Web Fullstack à Lyon" property="og:title">
+  <meta content="website" property="og:type">
+  <meta content="https://vianndev.github.io/vianndev_portfolio" property="og:url">
+  <meta content="https://vianndev.github.io/vianndev_portfolio/images/images/illustrations/profileid.jpg"
+        property="og:image">
+  <meta content="Photo de Vianney GOMAR, développeur web fullstack à Lyon" property="og:image:alt">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link href="/favicon.ico" rel="icon" sizes="any">
+  <link href="/icon.svg" rel="icon" type="image/svg+xml">
+  <link href="icon.png" rel="apple-touch-icon">
 
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  <link href="site.webmanifest" rel="manifest">
+  <meta content="#fafafa" name="theme-color">
   <script src="js/app.js"></script>
 </head>
-<body class="overflow-x-none" style="min-height: 100vh; display: flex; flex-direction: column">
-<!-- Navbar-->
+<nav>
   <div class="navbar bg-base-100">
     <div class="navbar-start">
       <div class="dropdown">
@@ -57,8 +59,11 @@
       <a class="btn">Button</a>
     </div>
   </div>
-<div class="flex flex-col overflow-y-scroll snap-y h-screen w-screen">
+</nav>
+<body class="overflow-x-none" style="min-height: 100vh; display: flex; flex-direction: column">
+<!-- Navbar-->
   <!--Presentation-->
+<div class="flex flex-col overflow-y-scroll snap-y h-max w-screen">
   <div id="Presentation" class="hero min-h-screen snap-start">
     <div class="hero-content mx-3 flex-col lg:flex-row">
       <div class="h-full">
@@ -97,19 +102,19 @@
       </div>
     </div>
   </div>
-  <div id="About_me" class="lg:min-h-screen snap-start overflow-none">
+  <div class="lg:min-h-screen snap-start overflow-none" id="About_me">
     <div class=" snap-start flex flex-col">
       <h2 class="section-title">À propos de moi</h2>
-      <div id="section-about-me"
-           class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start lg:items-center px-4 lg:px-20 grow">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start lg:items-center px-4 lg:px-20 grow"
+           id="section-about-me">
         <!-- Profile Image -->
         <div class="flex flex-col justify-center">
           <div class="avatar mx-auto mb-3">
             <div class="mask mask-squircle w-32 md:w-96 ">
-              <img src="images/illustrations/profileid.jpg" alt="Photo de Vianney">
+              <img alt="Photo de Vianney" src="images/illustrations/profileid.jpg">
             </div>
           </div>
-          <div id="tech-stack " class="p-2 ">
+          <div class="p-2 " id="tech-stack ">
             <div>
               <h3 class="text-2xl">Langages</h3>
               <div class="flex flex-row flex-wrap w-full gap-2 not-prose">
@@ -207,48 +212,40 @@
       </div>
     </div>
   </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"
-       class="fill-primary-content h-32 lg:h-64 bg-no-repeat  overflow-none" transform="scale(1, -1)"
-       style="transform-origin: center">
-    <path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path>
-    <path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path>
-    <path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path>
-    <path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path>
-  </svg>
-  <div id="Projects" class="snap-start bg-primary-content  w-full ">
+  <div class="snap-start bg-primary-content  w-full " id="Projects">
     <!--    text-[#562295]-->
     <h2 class="text-2xl md:text-6xl font-poppins-bold  font-bold my-8 text-[#562295] text-center">
       Projets</h2>
     <div
       class="m-5 xl:mx-auto grid grid-cols-1 xl:grid-cols-10 xl:w-8/12 xl:align-middle  items-center md:justify-center xl:items-center gap-3 h-max ">
-      <div id="projects-item-bd" class="xl:col-span-7 min-w-full xl:my-auto ">
+      <div class="xl:col-span-7 min-w-full xl:my-auto " id="projects-item-bd">
         <div class="carousel rounded-2xl w-full drop-shadow-2xl overflow-hidden">
-          <div id="item1" class="carousel-item w-full">
+          <div class="carousel-item w-full" id="item1">
             <img
-              src="images/illustrations/bdd/Previews/bd-front-preview.png"
-              class="w-full"/>
+              class="w-full"
+              src="images/illustrations/bdd/Previews/bd-front-preview.png"/>
           </div>
-          <div id="item2" class="carousel-item w-full">
+          <div class="carousel-item w-full" id="item2">
             <img
-              src="images/illustrations/bdd/Previews/bd-book-preview.png"
-              class="w-full"/>
+              class="w-full"
+              src="images/illustrations/bdd/Previews/bd-book-preview.png"/>
           </div>
-          <div id="item3" class="carousel-item w-full">
+          <div class="carousel-item w-full" id="item3">
             <img
-              src="images/illustrations/bdd/Previews/bd-search-modal.png"
-              class="w-full"/>
+              class="w-full"
+              src="images/illustrations/bdd/Previews/bd-search-modal.png"/>
           </div>
-          <div id="item4" class="carousel-item w-full">
+          <div class="carousel-item w-full" id="item4">
             <img
-              src="images/illustrations/bdd/Previews/bd-phone-preview-resized.png"
-              class="w-full"/>
+              class="w-full"
+              src="images/illustrations/bdd/Previews/bd-phone-preview-resized.png"/>
           </div>
         </div>
         <div class="flex w-full justify-center gap-2 py-2">
-          <a href="#item1" target="_self" class="btn btn-xs ">1</a>
-          <a href="#item2" class="btn btn-xs">2</a>
-          <a href="#item3" class="btn btn-xs">3</a>
-          <a href="#item4" class="btn btn-xs">4</a>
+          <a class="btn btn-xs " href="#item1" target="_self">1</a>
+          <a class="btn btn-xs" href="#item2">2</a>
+          <a class="btn btn-xs" href="#item3">3</a>
+          <a class="btn btn-xs" href="#item4">4</a>
         </div>
       </div>
       <div class="projects-item-description min-w-40 xl:min-w-96 prose xl:col-span-3">
@@ -265,37 +262,36 @@
           l'ajout
           d'un livre.
         </p>
-<!--        <a class="text-secondary  font-poppins-bold font-bold">Voir le site &#8599</a>-->
-        <div class="badge badge-primary badge-lg"><a href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html" class="not-prose">Voir le site &#8599</a></div>
-
+        <div class="badge badge-primary badge-lg"><a
+          class="not-prose" href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html">Voir le site
+          &#8599</a></div>
       </div>
     </div>
-    <!--          <img src="./images/illustrations/bdd/animationbig2.webp" class="projects-item-img aspect-auto rounded-2xl "-->
-    <!--               alt="no image">-->
   </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"
-       class="fill-primary-content w-full h-32 lg:h-64 2xl:h-96 bg-no-repeat bg-cover overflow-visible">
+  <svg class="fill-primary-content w-full bg-no-repeat bg-cover overflow-visible"
+       viewBox="0 0 1000 100"
+       xmlns="http://www.w3.org/2000/svg">
     <path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path>
     <path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path>
     <path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path>
     <path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path>
   </svg>
-  <div id="Reviews" class="hero md:min-h-screen snap-start flex-col flex-grow overflow-visible">
+  <div class="hero md:min-h-screen snap-start flex-col flex-grow overflow-visible" id="Reviews">
     <div class="hero-content snap-start flex-col h-full">
       <h2 class="section-title">Recommandations</h2>
       <div class="form-control w-52 mx-auto">
         <label class="label cursor-pointer">
           <span class="label-text">Données</span>
-          <input id="is_review_received" type="checkbox" class="toggle toggle-primary peer" checked="checked"/>
+          <input checked="checked" class="toggle toggle-primary peer" id="is_review_received" type="checkbox"/>
           <span class="label-text peer-checked:text-primary">Recues</span>
         </label>
       </div>
-      <div id="review_given_vincent"
-           class="review_given review-card h-full">
+      <div class="review_given review-card h-full"
+           id="review_given_vincent">
         <div class="review-card-header">
           <div class="review-card-header-avatar">
             <div class="review-card-header-avatar-image">
-              <img class="mx-auto" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+              <img class="mx-auto" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"/>
             </div>
           </div>
           <div class="review-card-header-text">
@@ -353,12 +349,12 @@
           </article>
         </div>
       </div>
-      <div id="review_received_vincent"
-           class="review_received review-card">
+      <div class="review_received review-card"
+           id="review_received_vincent">
         <div class="review-card-header">
           <div class="review-card-header-avatar">
             <div class="review-card-header-avatar-image">
-              <img class="mx-auto" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+              <img class="mx-auto" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"/>
             </div>
           </div>
           <div class="review-card-header-text">
@@ -370,7 +366,8 @@
         <div class="bg-secondary-content card-body items-center">
           <article class="prose">
             <p>
-              Vianney a été un excellent stagiaire ! Au départ timide et réservé avec l'équipe dev et les collègues, il a su avec le temps se révéler et s'améliorer en se basant sur
+              Vianney a été un excellent stagiaire ! Au départ timide et réservé avec l'équipe dev et les collègues, il
+              a su avec le temps se révéler et s'améliorer en se basant sur
               <a class="underline-hover not-prose" href="#">
                 <span>les revues de codes</span>
               </a>,
@@ -416,81 +413,79 @@
       </div>
     </div>
   </div>
-  <div id="Diplomes" class="hero min-h-screen w-full  overflow-visible">
-    <div class="hero-content snap-start flex-col w-full md:w-1/2 m-auto">
+  <div class="h-full" id="Diplomes">
+    <div class="snap-start flex flex-col h-full w-full md:w-1/2 m-auto">
       <div>
         <h1 class="section-title">Diplomes</h1>
       </div>
-      <div>
-        <ul class="timeline timeline-snap-icon max-md:timeline-compact gap-y-0 timeline-vertical">
-          <li>
-            <div class="timeline-middle ">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
-                <path fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                      clip-rule="evenodd"/>
-              </svg>
-            </div>
-            <div class="timeline-start mb-10 md:text-end timeline-box border-primary">
-              <time class="font-mono italic">2023-2024</time>
-              <div class="text-lg font-black">Développeur Web - RNCP niv 5 (bac + 2)</div>
-              <p class="text-lg inline-flex items-baseline text-secondary">
-            <span class=""><img src="images/illustrations/logoAfpa.png" alt="logoAfpa"
-                                class="h-4 self-center mx-3"></span>
-                AFPA
-              </p>
-              <p class="prose-lg">Formation 1258h : Analyses (Merise, UML) | Gestion de projets (Agile, SCRUM) |
-                Langages (SQL, HTML5,
-                CSS3,
-                JavaScript, PHP)</p>
-              <p class="prose-lg">BDD (MySQL) | Frameworks (Bootstrap, Symfony) | Logiciels (VS Code, Figma, Looping,
-                Trello).</p>
-            </div>
-            <hr>
-          </li>
-          <li>
-            <hr>
-            <div class="timeline-middle ">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
-                <path fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                      clip-rule="evenodd"/>
-              </svg>
-            </div>
-            <div class="timeline-end timeline-box border-primary">
-              <time class="font-mono italic ">2021-2022</time>
-              <p class="text-lg font-black ">CAP Menuisier</p>
-              <p class="text-secondary">Compagnons du Tour de France</p>
-              <p class="prose-lg">J'ai réalisé un apprentissage d'un an en menuiserie chez les compagnons du Tour de
-                France. J'ai
-                beaucoup
-                aimé cette année ainsi que les compétences que j'ai apprises mais je ne souhaite pas faire ce beau
-                métier
-                toute ma vie.
-            </div>
-            <hr/>
-          </li>
-          <li>
-            <hr>
-            <div class="timeline-middle">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
-                <path fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                      clip-rule="evenodd"/>
-              </svg>
-            </div>
-            <div class="timeline-start timeline-box shadow-xl md:text-end border-primary">
-              <time class="font-mono italic">2018-2021</time>
-              <p class="font-black ">Baccalauréat STI2D</p>
-              <p class="text-secondary">Lycée Branly</p>
-              <p class="prose-lg">J'ai passé un bac technologique STI2d afin de pouvoir apprendre des concepts
-                mécaniques, faire un peu
-                de
-                CAO et du code.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <ul class="timeline timeline-snap-icon max-md:timeline-compact gap-y-0 timeline-vertical">
+        <li>
+          <div class="timeline-middle ">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    fill-rule="evenodd"/>
+            </svg>
+          </div>
+          <div class="timeline-start mb-10 md:text-end timeline-box border-primary">
+            <time class="font-mono italic">2023-2024</time>
+            <div class="text-lg font-black">Développeur Web - RNCP niv 5 (bac + 2)</div>
+            <p class="text-lg inline-flex items-baseline text-secondary">
+            <span class=""><img alt="logoAfpa" class="h-4 self-center mx-3"
+                                src="images/illustrations/logoAfpa.png"></span>
+              AFPA
+            </p>
+            <p class="prose-lg">Formation 1258h : Analyses (Merise, UML) | Gestion de projets (Agile, SCRUM) |
+              Langages (SQL, HTML5,
+              CSS3,
+              JavaScript, PHP)</p>
+            <p class="prose-lg">BDD (MySQL) | Frameworks (Bootstrap, Symfony) | Logiciels (VS Code, Figma, Looping,
+              Trello).</p>
+          </div>
+          <hr>
+        </li>
+        <li>
+          <hr>
+          <div class="timeline-middle ">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    fill-rule="evenodd"/>
+            </svg>
+          </div>
+          <div class="timeline-end timeline-box border-primary">
+            <time class="font-mono italic ">2021-2022</time>
+            <p class="text-lg font-black ">CAP Menuisier</p>
+            <p class="text-secondary">Compagnons du Tour de France</p>
+            <p class="prose-lg">J'ai réalisé un apprentissage d'un an en menuiserie chez les compagnons du Tour de
+              France. J'ai
+              beaucoup
+              aimé cette année ainsi que les compétences que j'ai apprises mais je ne souhaite pas faire ce beau
+              métier
+              toute ma vie.
+          </div>
+          <hr/>
+        </li>
+        <li>
+          <hr>
+          <div class="timeline-middle">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    fill-rule="evenodd"/>
+            </svg>
+          </div>
+          <div class="timeline-start timeline-box shadow-xl md:text-end border-primary">
+            <time class="font-mono italic">2018-2021</time>
+            <p class="font-black ">Baccalauréat STI2D</p>
+            <p class="text-secondary">Lycée Branly</p>
+            <p class="prose-lg">J'ai passé un bac technologique STI2d afin de pouvoir apprendre des concepts
+              mécaniques, faire un peu
+              de
+              CAO et du code.</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
