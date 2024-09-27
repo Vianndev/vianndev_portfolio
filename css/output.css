@@ -3947,12 +3947,12 @@ html {
   z-index: 10;
 }
 
-.z-\[2\] {
-  z-index: 2;
-}
-
 .z-50 {
   z-index: 50;
+}
+
+.z-\[2\] {
+  z-index: 2;
 }
 
 .m-auto {
@@ -4052,6 +4052,10 @@ html {
   min-height: 100svh;
 }
 
+.w-10\/12 {
+  width: 83.333333%;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -4070,10 +4074,6 @@ html {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-10\/12 {
-  width: 83.333333%;
 }
 
 .min-w-40 {
@@ -4102,6 +4102,10 @@ html {
 
 .snap-y {
   scroll-snap-type: y var(--tw-scroll-snap-strictness);
+}
+
+.snap-mandatory {
+  --tw-scroll-snap-strictness: mandatory;
 }
 
 .snap-start {
