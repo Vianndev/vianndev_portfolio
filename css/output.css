@@ -3935,12 +3935,24 @@ html {
   }
 }
 
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
 
 .z-\[2\] {
   z-index: 2;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .m-auto {
@@ -4058,6 +4070,10 @@ html {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
 }
 
 .min-w-40 {

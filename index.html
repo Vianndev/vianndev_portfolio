@@ -23,43 +23,45 @@
   <script src="js/app.js"></script>
   <link href="css/output.css" rel="stylesheet">
 </head>
-<nav data-theme="cupcake">
-  <div class="navbar bg-base-100 shadow-sm">
-    <div class="navbar-start">
-      <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h8m-8 6h16"/>
-          </svg>
+<header class="sticky top-0 z-50"">
+  <nav data-theme="cupcake">
+    <div class="navbar bg-base-100 shadow-sm">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"/>
+            </svg>
+          </div>
+          <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[2] mt-3 w-52 p-2 shadow">
+            <li><a>Item 1</a></li>
+            <li><a>Item 3</a></li>
+          </ul>
         </div>
-        <ul tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[2] mt-3 w-52 p-2 shadow">
+        <a class="btn btn-ghost text-xl "><span class="text-primary">Vianney</span> GOMAR</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 ">
           <li><a>Item 1</a></li>
           <li><a>Item 3</a></li>
         </ul>
       </div>
-      <a class="btn btn-ghost text-xl "><span class="text-primary">Vianney</span> GOMAR</a>
+      <div class="navbar-end">
+        <a class="btn">Button</a>
+      </div>
     </div>
-    <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1 ">
-        <li><a>Item 1</a></li>
-        <li><a>Item 3</a></li>
-      </ul>
-    </div>
-    <div class="navbar-end">
-      <a class="btn">Button</a>
-    </div>
-  </div>
-</nav>
+  </nav>
+</header>
 <body class="overflow-x-none min-h-svh flex flex-col">
 <div class="overflow-y-scroll snap-y h-max w-screen">
   <div data-theme="cupcake" id="Presentation" class="hero min-h-screen snap-start">
@@ -210,7 +212,7 @@
       </div>
     </div>
   </div>
-  <div data-theme="cupcake" class="bg-primary">
+  <div data-theme="cupcake" class="bg-primary bg-cover">
     <svg  data-theme="light" class="fill-primary-content w-full bg-no-repeat bg-cover overflow-visible z-10"
          xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' transform="scale(1, -1)"
          style="transform-origin: center">
@@ -423,7 +425,7 @@
     </div>
   </div>
   <div class="h-full" id="Diplomes">
-    <div class="snap-start flex flex-col h-full w-full md:w-1/2 m-auto">
+    <div class="snap-start flex flex-col h-full w-full w-10/12 md:w-1/2 m-auto">
       <div>
         <h1 class="section-title">Diplomes</h1>
       </div>
