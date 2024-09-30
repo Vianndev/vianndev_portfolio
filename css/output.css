@@ -4255,8 +4255,24 @@ html {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-primary-content {
+  --tw-gradient-from: var(--fallback-pc,oklch(var(--pc)/1)) var(--tw-gradient-from-position);
+  --tw-gradient-to: var(--fallback-pc,oklch(var(--pc)/0)) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-secondary {
+  --tw-gradient-from: var(--fallback-s,oklch(var(--s)/1)) var(--tw-gradient-from-position);
+  --tw-gradient-to: var(--fallback-s,oklch(var(--s)/0)) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-secondary {
   --tw-gradient-to: var(--fallback-s,oklch(var(--s)/1)) var(--tw-gradient-to-position);
+}
+
+.to-primary {
+  --tw-gradient-to: var(--fallback-p,oklch(var(--p)/1)) var(--tw-gradient-to-position);
 }
 
 .bg-cover {
