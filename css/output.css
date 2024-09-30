@@ -4285,6 +4285,10 @@ html {
   fill: var(--fallback-pc,oklch(var(--pc)/1));
 }
 
+.fill-accent {
+  fill: var(--fallback-a,oklch(var(--a)/1));
+}
+
 .p-2 {
   padding: 0.5rem;
 }
