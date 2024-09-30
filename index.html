@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="scroll-smooth" data-theme="light" lang="">
+<html class="scroll-smooth overflow-x-none" data-theme="light" lang="">
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -20,7 +20,7 @@
   <link href="css/output.css" rel="stylesheet">
   <script src="js/app.js"></script>
 </head>
-<header class="sticky top-0 z-50"
+<header class="sticky top-0 z-50">
   <nav data-theme="cupcake">
     <div class="navbar bg-base-100 shadow-sm">
       <div class="navbar-start">
@@ -106,6 +106,79 @@
       </div>
     </div>
   </div>
+  <div class="relative snap-center bg-primary-content  w-full overflow-visible z-20" id="Projects">
+<!--    The svg needs the be absolute and his parents relative.It is flipped thanks to transform center and scale-->
+    <svg  class="fill-primary-content w-full bg-no-repeat bg-cover overflow-visible absolute bottom-full "
+          xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 20' transform="scale(1, -1)"
+          style="transform-origin: center">
+      <path
+        d='M0 0v99.7C62 69 122.4 48.7 205 66c83.8 17.6 160.5 20.4 240-12 54-22 110-26 173-10a392.2 392.2 0 0 0 222-5c55-17 110.3-36.9 160-27.2V0H0Z'
+        opacity='.5'></path>
+      <path
+        d='M0 0v74.7C62 44 122.4 28.7 205 46c83.8 17.6 160.5 25.4 240-7 54-22 110-21 173-5 76.5 19.4 146.5 23.3 222 0 55-17 110.3-31.9 160-22.2V0H0Z'></path>
+    </svg>
+    <h2 class="text-2xl md:text-6xl font-poppins-bold -mt-0.5 font-bold  py-8 text-[#562295] text-center">
+      Projets</h2>
+    <div
+      class="p-5 xl:mx-auto grid grid-cols-1 xl:grid-cols-10 xl:w-8/12 xl:align-middle  items-center md:justify-center xl:items-center gap-3 h-max ">
+      <div class="xl:col-span-7 min-w-full xl:my-auto " id="projects-item-bd">
+        <div class="carousel rounded-2xl w-full drop-shadow-2xl overflow-hidden">
+          <div class="carousel-item w-full" id="item1">
+            <img
+              class="w-full"
+              src="images/illustrations/bdd/Previews/bd-front-preview.png"/>
+          </div>
+          <div class="carousel-item w-full" id="item2">
+            <img
+              class="w-full"
+              src="images/illustrations/bdd/Previews/bd-book-preview.png"/>
+          </div>
+          <div class="carousel-item w-full" id="item3">
+            <img
+              class="w-full"
+              src="images/illustrations/bdd/Previews/bd-search-modal.png"/>
+          </div>
+          <div class="carousel-item w-full" id="item4">
+            <img
+              class="w-full"
+              src="images/illustrations/bdd/Previews/bd-phone-preview-resized.png"/>
+          </div>
+        </div>
+        <div class="flex w-full justify-center gap-2 py-2">
+          <a class="btn btn-xs " href="#item1" target="_self">1</a>
+          <a class="btn btn-xs" href="#item2">2</a>
+          <a class="btn btn-xs" href="#item3">3</a>
+          <a class="btn btn-xs" href="#item4">4</a>
+        </div>
+      </div>
+      <div class="projects-item-description min-w-40 xl:min-w-96 prose xl:col-span-3">
+        <h3 class="text-2xl md:text-4xl font-poppins font-black"><a
+          href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html"></a>Gestion de
+          location de Bandes dessinées
+        </h3>
+        <p class="text-xl md:text-2xl font-poppins font-bold">Application Web</p>
+        <p class="prose-xl">Site responsif de gestion de location de bandes dessinées créé lors de ma formation (sans
+          base
+          de
+          données).
+          Utilisation de l'API d'Open Library pour auto-compléter les informations et la couverture lors de
+          l'ajout
+          d'un livre.
+        </p>
+        <div class="badge badge-primary badge-lg"><a
+          class="not-prose" href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html">Voir le site
+          &#8599</a></div>
+      </div>
+    </div>
+  </div>
+  <svg class="fill-primary-content w-full bg-no-repeat bg-cover overflow-visible"
+       viewBox="0 0 1000 100"
+       xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path>
+    <path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path>
+    <path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path>
+    <path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path>
+  </svg>
   <div data-theme="cupcake" class="lg:min-h-screen snap-start " id="About_me">
     <div class=" snap-start flex flex-col h-max">
       <h2 class="section-title">À propos de moi</h2>
@@ -216,79 +289,7 @@
       </div>
     </div>
   </div>
-  <div class="relative snap-center bg-primary-content  w-full overflow-visible z-20" id="Projects">
-<!--    The svg needs the be absolute and his parents relative.It is flipped thanks to transform center and scale-->
-    <svg  class="fill-primary-content w-full bg-no-repeat bg-cover overflow-visible absolute bottom-full "
-          xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 30' transform="scale(1, -1)"
-          style="transform-origin: center">
-      <path
-        d='M0 0v99.7C62 69 122.4 48.7 205 66c83.8 17.6 160.5 20.4 240-12 54-22 110-26 173-10a392.2 392.2 0 0 0 222-5c55-17 110.3-36.9 160-27.2V0H0Z'
-        opacity='.5'></path>
-      <path
-        d='M0 0v74.7C62 44 122.4 28.7 205 46c83.8 17.6 160.5 25.4 240-7 54-22 110-21 173-5 76.5 19.4 146.5 23.3 222 0 55-17 110.3-31.9 160-22.2V0H0Z'></path>
-    </svg>
-    <h2 class="text-2xl md:text-6xl font-poppins-bold -mt-0.5 font-bold  py-8 text-[#562295] text-center">
-      Projets</h2>
-    <div
-      class="p-5 xl:mx-auto grid grid-cols-1 xl:grid-cols-10 xl:w-8/12 xl:align-middle  items-center md:justify-center xl:items-center gap-3 h-max ">
-      <div class="xl:col-span-7 min-w-full xl:my-auto " id="projects-item-bd">
-        <div class="carousel rounded-2xl w-full drop-shadow-2xl overflow-hidden">
-          <div class="carousel-item w-full" id="item1">
-            <img
-              class="w-full"
-              src="images/illustrations/bdd/Previews/bd-front-preview.png"/>
-          </div>
-          <div class="carousel-item w-full" id="item2">
-            <img
-              class="w-full"
-              src="images/illustrations/bdd/Previews/bd-book-preview.png"/>
-          </div>
-          <div class="carousel-item w-full" id="item3">
-            <img
-              class="w-full"
-              src="images/illustrations/bdd/Previews/bd-search-modal.png"/>
-          </div>
-          <div class="carousel-item w-full" id="item4">
-            <img
-              class="w-full"
-              src="images/illustrations/bdd/Previews/bd-phone-preview-resized.png"/>
-          </div>
-        </div>
-        <div class="flex w-full justify-center gap-2 py-2">
-          <a class="btn btn-xs " href="#item1" target="_self">1</a>
-          <a class="btn btn-xs" href="#item2">2</a>
-          <a class="btn btn-xs" href="#item3">3</a>
-          <a class="btn btn-xs" href="#item4">4</a>
-        </div>
-      </div>
-      <div class="projects-item-description min-w-40 xl:min-w-96 prose xl:col-span-3">
-        <h3 class="text-2xl md:text-4xl font-poppins font-black"><a
-          href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html"></a>Gestion de
-          location de Bandes dessinées
-        </h3>
-        <p class="text-xl md:text-2xl font-poppins font-bold">Application Web</p>
-        <p class="prose-xl">Site responsif de gestion de location de bandes dessinées créé lors de ma formation (sans
-          base
-          de
-          données).
-          Utilisation de l'API d'Open Library pour auto-compléter les informations et la couverture lors de
-          l'ajout
-          d'un livre.
-        </p>
-        <div class="badge badge-primary badge-lg"><a
-          class="not-prose" href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html">Voir le site
-          &#8599</a></div>
-      </div>
-    </div>
-  </div>
-  <svg class="fill-primary-content w-full bg-no-repeat bg-cover overflow-visible"
-       viewBox="0 0 1000 100"
-       xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path>
-    <path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path>
-    <path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path>
-    <path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path>
-  </svg>
+
   <div class="hero md:min-h-screen snap-start flex-col flex-grow overflow-visible" id="Reviews">
     <div class="hero-content snap-start flex-col h-full">
       <h2 class="section-title">Recommandations</h2>
