@@ -178,53 +178,49 @@
       <path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path>
     </svg>
   </div>
-  <div  data-theme="cupcake"  class="relative snap-center bg-accent w-full overflow-visible pt-14 xl:pt-56">
+  <div  data-theme="cupcake"  class="absolute-wave-at-top snap-center bg-accent w-full overflow-visible relative">
     <div
       class="p-5 xl:mx-auto grid grid-cols-1 xl:grid-cols-10 xl:w-8/12 xl:align-middle  items-center md:justify-center xl:items-center gap-3 h-max ">
       <div class="xl:col-span-7 min-w-full xl:my-auto snap-non " id="-item-bd">
         <div class="carousel rounded-2xl w-full drop-shadow-2xl overflow-hidden">
-          <div class="carousel-item w-full " id="bd-fronpreview">
-            <img
-              class="w-full"
-              src="images/illustrations/bdd/Previews/bd-front-preview.png"/>
-          </div>
-          <div class="carousel-item w-full" id="bd-book-pview">
-            <img
-              class="w-full"
-              src="images/illustrations/bdd/Previews/bd-book-preview.png"/>
-          </div>
-          <div class="carousel-item w-full" id="bd-sear-modal">
-            <img
-              class="w-full"
-              src="images/illustrations/bdd/Previews/bd-search-modal.png"/>
-          </div>
-          <div class="carousel-item w-full" id="bd-phonpreview">
-            <img
-              class="w-full"
-              src="images/illustrations/bdd/Previews/bd-phone-preview-resized.png"/>
-          </div>
+        <div class="carousel-item w-full" id="react-front-preview">
+          <img
+            class="w-full"
+            src="images/illustrations/react-weather/react-weather-preview-desktop.png"
+            alt="Aperçu du tableau de bord principal de l'application météo React sur ordinateur de bureau">
         </div>
+        <div class="carousel-item w-full" id="react-book-preview">
+          <img
+            class="w-full"
+            src="images/illustrations/react-weather/react-weather-preview-desktop-autocomplete.png"
+            alt="Fonction d'autocomplétion de l'application météo React affichant des suggestions de villes">
+        </div>
+        <div class="carousel-item w-full" id="react-search-modal">
+          <img
+            class="w-full"
+            src="images/illustrations/react-weather/react-weather-preview-desktop-geosearch.png"
+            alt="Recherche par geolocation de l'application météo">
+        </div>
+        <div class="carousel-item w-full" id="react-phone-preview">
+          <img
+            class="w-full"
+            src="images/illustrations/react-weather/react-weather-preview-phone.png"
+            alt="Aperçu de l'application météo React sur téléphone montrant une interface météo responsive">
+        </div>
+      </div>
         <div class="flex w-full justify-center gap-2 py-2">
-          <a class="btn btn-xs" href="#bd-front-preview" target="_self">1</a>
-          <a class="btn btn-xs" href="#bd-book-preview">2</a>
-          <a class="btn btn-xs" href="#bd-search-modal">3</a>
-          <a class="btn btn-xs" href="#bd-phone-preview">4</a>
+          <a class="btn btn-xs" href="#react-front-preview" target="_self">1</a>
+          <a class="btn btn-xs" href="#react-book-preview" target="_self">2</a>
+          <a class="btn btn-xs" href="#react-search-modal" target="_self">3</a>
+          <a class="btn btn-xs" href="#react-phone-preview" target="_self">4</a>
         </div>
       </div>
       <div class="projects-item-description min-w-40 xl:min-w-96 prose xl:col-span-3">
         <h3 class="text-2xl md:text-4xl font-poppins font-black"><a
-          href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html"></a>Gestion de
-          location de Bandes dessinées
+          href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html"></a>Site météorologique avec React.js
         </h3>
         <p class="text-xl md:text-2xl font-poppins font-bold">Application Web</p>
-        <p class="prose-xl">Site responsif de gestion de location de bandes dessinées créé lors de ma formation (sans
-          base
-          de
-          données).
-          Utilisation de l'API d'Open Library pour auto-compléter les informations et la couverture lors de
-          l'ajout
-          d'un livre.
-        </p>
+        <p class="prose-xl">J'ai créé ce site en utilisant React.Js, OpenWeather API, Tailwind.css pour le style. Il m'a permis d'apprendre les bases de react et de récupérer des données via une API. </p>
         <div class="badge badge-primary badge-lg"><a
           class="not-prose" href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html">Voir le site
           &#8599</a></div>
@@ -235,7 +231,7 @@
 <!--    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1000 20" class="fill-accent w-full bg-no-repeat bg-cover overflow-visible absolute top-full"><path d="M500 80.7C358 68 0 4 0 4V0h1000v84.7c-216 23.3-358 8.6-500-4Z" opacity=".3"></path><path d="M500 65.7C358 53 0 4 0 4V0h1000v62.7c-216 23.3-358 15.6-500 3Z" opacity=".5"></path><path d="M500 50.7C358 38 0 4 0 4V0h1000v40.7C784 64 642 63.3 500 50.7Z"></path></svg>-->
   </div>
   <div data-theme="cupcake" class="lg:min-h-screen snap-start " id="About_me">
-    <div class=" snap-start flex flex-col h-max">
+    <div class=" snap-start flex flex-col h-max absolute-wave-at-top">
       <h2 class="section-title">À propos de moi</h2>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start lg:items-center px-4 lg:px-20 grow"
            id="section-about-me">
@@ -487,7 +483,7 @@
       <div>
         <h1 class="section-title">Diplomes</h1>
       </div>
-      <ul class="timeline timeline-snap-icon max-md:timeline-compact gap-y-0 timeline-vertical">
+      <ul class="timeline timeline-snap-icon max-md:timeline-compact gap-y-0 timeline-vertical ">
         <li>
           <div class="timeline-middle ">
             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

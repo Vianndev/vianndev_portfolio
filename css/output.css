@@ -3379,6 +3379,10 @@ html {
   border-bottom-color: var(--fallback-bc,oklch(var(--bc)/0.2));
 }
 
+.artboard.phone {
+  width: 320px;
+}
+
 .badge-lg {
   height: 1.5rem;
   font-size: 1rem;
@@ -4120,10 +4124,6 @@ html {
   cursor: pointer;
 }
 
-.snap-none {
-  scroll-snap-type: none;
-}
-
 .snap-y {
   scroll-snap-type: y var(--tw-scroll-snap-strictness);
 }
@@ -4138,10 +4138,6 @@ html {
 
 .snap-center {
   scroll-snap-align: center;
-}
-
-.snap-align-none {
-  scroll-snap-align: none;
 }
 
 .columns-2 {
@@ -4229,6 +4225,11 @@ html {
   border-radius: var(--rounded-box, 1rem);
 }
 
+.bg-accent {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
+}
+
 .bg-base-100 {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
@@ -4242,16 +4243,6 @@ html {
 .bg-secondary-content {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-sc,oklch(var(--sc)/var(--tw-bg-opacity)));
-}
-
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
-}
-
-.bg-accent {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
 }
 
 .bg-gradient-to-r {
@@ -4281,12 +4272,12 @@ html {
   background-repeat: no-repeat;
 }
 
-.fill-primary-content {
-  fill: var(--fallback-pc,oklch(var(--pc)/1));
-}
-
 .fill-accent {
   fill: var(--fallback-a,oklch(var(--a)/1));
+}
+
+.fill-primary-content {
+  fill: var(--fallback-pc,oklch(var(--pc)/1));
 }
 
 .p-2 {
@@ -4321,36 +4312,16 @@ html {
   padding-bottom: 2rem;
 }
 
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pt-3\.5 {
-  padding-top: 0.875rem;
-}
-
-.pt-36 {
-  padding-top: 9rem;
-}
-
-.pt-56 {
-  padding-top: 14rem;
-}
-
-.pt-32 {
-  padding-top: 8rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
 }
 
 .text-center {
@@ -5086,5 +5057,15 @@ html {
   .section-title {
     font-size: 3.75rem;
     line-height: 1;
+  }
+}
+
+.absolute-wave-at-top {
+  padding-top: 3.5rem;
+}
+
+@media (min-width: 1280px) {
+  .absolute-wave-at-top {
+    padding-top: 14rem;
   }
 }

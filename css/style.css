@@ -21,6 +21,10 @@
   @apply text-2xl md:text-6xl font-poppins-bold font-bold mt-3 mb-8  text-center
 }
 
+.absolute-wave-at-top {
+  @apply pt-14 xl:pt-56
+}
+
 @layer components {
   .review-card {
     @apply flex card lg:card-side drop-shadow-2xl m-auto my-auto rounded-xl overflow-hidden
