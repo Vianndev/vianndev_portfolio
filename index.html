@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="scroll-smooth overflow-x-none" data-theme="light" lang="">
+<html class="scroll-smooth overflow-x-none" data-theme="cupcake" lang="">
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -25,22 +25,22 @@
     <div class="navbar bg-base-100 shadow-sm">
       <div class="navbar-start">
         <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <div class="btn btn-ghost lg:hidden" role="button" tabindex="0">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
               fill="none"
+              stroke="currentColor"
               viewBox="0 0 24 24"
-              stroke="currentColor">
+              xmlns="http://www.w3.org/2000/svg">
               <path
+                d="M4 6h16M4 12h8m-8 6h16"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"/>
+                stroke-width="2"/>
             </svg>
           </div>
-          <ul tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[2] mt-3 w-52 p-2 shadow">
+          <ul class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[2] mt-3 w-52 p-2 shadow"
+              tabindex="0">
             <li><a href="#Presentation">Présentation</a></li>
             <li><a href="#section-about-me">À propos de moi</a></li>
             <li><a href="#Projects">Projets</a></li>
@@ -61,14 +61,27 @@
         </ul>
       </div>
       <div class="navbar-end">
-        <a class="btn">Button</a>
+        <div
+          id="Contact-me-button"
+          class="btn"
+          role="button" onclick="window.open('https://www.linkedin.com/in/vianneygomar/', '_blank')">
+          <!-- Linkedin -->
+          <span class="[&>svg]:h-5 [&>svg]:w-5 [&>svg]:fill-[#0077b5]">
+          <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+            <path
+              d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+          </svg>
+          </span>
+          <span class="hidden lg:block">Contacter moi !</span>
+        </div>
       </div>
     </div>
   </nav>
 </header>
 <body class="overflow-x-none min-h-svh flex flex-col">
 <div class="overflow-y-scroll snap-y  snap-proximity h-max w-screen">
-  <div data-theme="cupcake" id="Presentation" class="hero min-h-screen snap-start">
+  <div class="hero min-h-screen snap-start" data-theme="cupcake" id="Presentation">
     <div class="hero-content mx-3 flex-col lg:flex-row">
       <div class="h-full">
         <h1 class="h-full flex flex-col gap-y-2 sm:gap-y-8 sm:my-3">
@@ -100,17 +113,17 @@
       <div class="block max-md:hidden md:max-w-sm lg:max-w-md xl:max-w-lg align-top">
         <div class="avatar lg:m-10 transform transition-transform duration-300 hover:scale-110 ">
           <div class="mask mask-squircle">
-            <img class="size-10" src="images/illustrations/profileid.avif" alt="Photo de Vianney">
+            <img alt="Photo de Vianney" class="size-10" src="images/illustrations/profileid.avif">
           </div>
         </div>
       </div>
     </div>
   </div>
   <div class="relative snap-center bg-primary-content  w-full overflow-visible z-20" id="Projects">
-<!--    The svg needs the be absolute and his parents relative.It is flipped thanks to transform center and scale-->
-    <svg  class="fill-primary-content w-full bg-no-repeat bg-cover overflow-visible absolute bottom-full "
-          xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 20' transform="scale(1, -1)"
-          style="transform-origin: center">
+    <!--    The svg needs the be absolute and his parents relative.It is flipped thanks to transform center and scale-->
+    <svg class="fill-primary-content w-full bg-no-repeat bg-cover overflow-visible absolute bottom-full "
+         style="transform-origin: center" transform="scale(1, -1)" viewBox='0 0 1000 20'
+         xmlns='http://www.w3.org/2000/svg'>
       <path
         d='M0 0v99.7C62 69 122.4 48.7 205 66c83.8 17.6 160.5 20.4 240-12 54-22 110-26 173-10a392.2 392.2 0 0 0 222-5c55-17 110.3-36.9 160-27.2V0H0Z'
         opacity='.5'></path>
@@ -121,32 +134,33 @@
       Projets</h2>
     <div
       class="p-5 xl:mx-auto grid grid-cols-1 xl:grid-cols-10 xl:w-8/12 xl:align-middle  items-center md:justify-center xl:items-center gap-3 h-max ">
-      <div class="xl:col-span-7 min-w-full xl:my-auto snap-non " id="projects-item-bd"><div class="carousel rounded-2xl w-full drop-shadow-2xl overflow-hidden">
-        <div class="carousel-item w-full " id="bd-front-preview">
-          <img
-            class="w-full"
-            src="images/illustrations/bdd/Previews/bd-front-preview.avif"
-            alt="Aperçu de la page d'accueil de gestion de bandes dessinées"/>
+      <div class="xl:col-span-7 min-w-full xl:my-auto snap-non " id="projects-item-bd">
+        <div class="carousel rounded-2xl w-full drop-shadow-2xl overflow-hidden">
+          <div class="carousel-item w-full " id="bd-front-preview">
+            <img
+              alt="Aperçu de la page d'accueil de gestion de bandes dessinées"
+              class="w-full"
+              src="images/illustrations/bdd/Previews/bd-front-preview.avif"/>
+          </div>
+          <div class="carousel-item w-full" id="bd-book-preview">
+            <img
+              alt="Aperçu d'une fiche de bande dessinée ajoutée dans l'application"
+              class="w-full"
+              src="images/illustrations/bdd/Previews/bd-book-preview.avif"/>
+          </div>
+          <div class="carousel-item w-full" id="bd-search-modal">
+            <img
+              alt="Modal de recherche pour ajouter une bande dessinée via l'API Open Library"
+              class="w-full"
+              src="images/illustrations/bdd/Previews/bd-search-modal.avif"/>
+          </div>
+          <div class="carousel-item w-full" id="bd-phone-preview">
+            <img
+              alt="Aperçu du site de gestion de bandes dessinées sur un téléphone mobile"
+              class="w-full"
+              src="images/illustrations/bdd/Previews/bd-phone-preview-resized.avif"/>
+          </div>
         </div>
-        <div class="carousel-item w-full" id="bd-book-preview">
-          <img
-            class="w-full"
-            src="images/illustrations/bdd/Previews/bd-book-preview.avif"
-            alt="Aperçu d'une fiche de bande dessinée ajoutée dans l'application"/>
-        </div>
-        <div class="carousel-item w-full" id="bd-search-modal">
-          <img
-            class="w-full"
-            src="images/illustrations/bdd/Previews/bd-search-modal.avif"
-            alt="Modal de recherche pour ajouter une bande dessinée via l'API Open Library"/>
-        </div>
-        <div class="carousel-item w-full" id="bd-phone-preview">
-          <img
-            class="w-full"
-            src="images/illustrations/bdd/Previews/bd-phone-preview-resized.avif"
-            alt="Aperçu du site de gestion de bandes dessinées sur un téléphone mobile"/>
-        </div>
-      </div>
         <div class="flex w-full justify-center gap-2 py-2">
           <a class="btn btn-xs" href="#bd-front-preview" target="_self">1</a>
           <a class="btn btn-xs" href="#bd-book-preview">2</a>
@@ -182,36 +196,36 @@
       <path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path>
     </svg>
   </div>
-  <div  data-theme="cupcake"  class="absolute-wave-at-top snap-center bg-accent w-full overflow-visible relative">
+  <div class="absolute-wave-at-top snap-center bg-accent w-full overflow-visible relative" data-theme="cupcake">
     <div
       class="p-5 xl:mx-auto grid grid-cols-1 xl:grid-cols-10 xl:w-8/12 xl:align-middle  items-center md:justify-center xl:items-center gap-3 h-max ">
       <div class="xl:col-span-7 min-w-full xl:my-auto snap-non " id="-item-bd">
         <div class="carousel rounded-2xl w-full drop-shadow-2xl overflow-hidden">
-        <div class="carousel-item w-full" id="react-front-preview">
-          <img
-            class="w-full"
-            src="images/illustrations/react-weather/react-weather-preview-desktop.avif"
-            alt="Aperçu du tableau de bord principal de l'application météo React sur ordinateur de bureau">
+          <div class="carousel-item w-full" id="react-front-preview">
+            <img
+              alt="Aperçu du tableau de bord principal de l'application météo React sur ordinateur de bureau"
+              class="w-full"
+              src="images/illustrations/react-weather/react-weather-preview-desktop.avif">
+          </div>
+          <div class="carousel-item w-full" id="react-book-preview">
+            <img
+              alt="Fonction d'autocomplétion de l'application météo React affichant des suggestions de villes"
+              class="w-full"
+              src="images/illustrations/react-weather/react-weather-preview-desktop-autocomplete.avif">
+          </div>
+          <div class="carousel-item w-full" id="react-search-modal">
+            <img
+              alt="Recherche par geolocation de l'application météo"
+              class="w-full"
+              src="images/illustrations/react-weather/react-weather-preview-desktop-geosearch.avif">
+          </div>
+          <div class="carousel-item w-full" id="react-phone-preview">
+            <img
+              alt="Aperçu de l'application météo React sur téléphone montrant une interface météo responsive"
+              class="w-full"
+              src="images/illustrations/react-weather/react-weather-preview-phone.avif">
+          </div>
         </div>
-        <div class="carousel-item w-full" id="react-book-preview">
-          <img
-            class="w-full"
-            src="images/illustrations/react-weather/react-weather-preview-desktop-autocomplete.avif"
-            alt="Fonction d'autocomplétion de l'application météo React affichant des suggestions de villes">
-        </div>
-        <div class="carousel-item w-full" id="react-search-modal">
-          <img
-            class="w-full"
-            src="images/illustrations/react-weather/react-weather-preview-desktop-geosearch.avif"
-            alt="Recherche par geolocation de l'application météo">
-        </div>
-        <div class="carousel-item w-full" id="react-phone-preview">
-          <img
-            class="w-full"
-            src="images/illustrations/react-weather/react-weather-preview-phone.avif"
-            alt="Aperçu de l'application météo React sur téléphone montrant une interface météo responsive">
-        </div>
-      </div>
         <div class="flex w-full justify-center gap-2 py-2">
           <a class="btn btn-xs" href="#react-front-preview" target="_self">1</a>
           <a class="btn btn-xs" href="#react-book-preview" target="_self">2</a>
@@ -221,20 +235,31 @@
       </div>
       <div class="projects-item-description min-w-40 xl:min-w-96 prose xl:col-span-3">
         <h3 class="text-2xl md:text-4xl font-poppins font-black"><a
-          href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html"></a>Site météorologique avec React.js
+          href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html"></a>Site météorologique avec
+          React.js
         </h3>
         <p class="text-xl md:text-2xl font-poppins font-bold">Application Web</p>
-        <p class="prose-xl">J'ai créé ce site en utilisant React.Js, OpenWeather API, Tailwind.css pour le style. Il m'a permis d'apprendre les bases de react et de récupérer des données via une API. </p>
+        <p class="prose-xl">J'ai créé ce site en utilisant React.Js, OpenWeather API, Tailwind.css pour le style. Il m'a
+          permis d'apprendre les bases de react et de récupérer des données via une API. </p>
         <div class="badge badge-primary badge-lg"><a
           class="not-prose" href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html">Voir le site
           &#8599</a></div>
       </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" class="fill-accent w-full bg-no-repeat bg-cover overflow-visible absolute top-full"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" /><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" /><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5" /></svg>
-<!--    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17"  class="fill-accent w-full bg-no-repeat bg-cover overflow-visible absolute top-full"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" /><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" /><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5"/></svg>-->
-<!--    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1000 20" class="fill-accent w-full bg-no-repeat bg-cover overflow-visible absolute top-full"><path d="M500 80.7C358 68 0 4 0 4V0h1000v84.7c-216 23.3-358 8.6-500-4Z" opacity=".3"></path><path d="M500 65.7C358 53 0 4 0 4V0h1000v62.7c-216 23.3-358 15.6-500 3Z" opacity=".5"></path><path d="M500 50.7C358 38 0 4 0 4V0h1000v40.7C784 64 642 63.3 500 50.7Z"></path></svg>-->
+    <svg class="fill-accent w-full bg-no-repeat bg-cover overflow-visible absolute top-full" viewBox="0 0 35.28 2.17"
+         xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z"/>
+      <path
+        d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z"
+        opacity=".5"/>
+      <path
+        d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z"
+        opacity=".5"/>
+    </svg>
+    <!--    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17"  class="fill-accent w-full bg-no-repeat bg-cover overflow-visible absolute top-full"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" /><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" /><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5"/></svg>-->
+    <!--    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1000 20" class="fill-accent w-full bg-no-repeat bg-cover overflow-visible absolute top-full"><path d="M500 80.7C358 68 0 4 0 4V0h1000v84.7c-216 23.3-358 8.6-500-4Z" opacity=".3"></path><path d="M500 65.7C358 53 0 4 0 4V0h1000v62.7c-216 23.3-358 15.6-500 3Z" opacity=".5"></path><path d="M500 50.7C358 38 0 4 0 4V0h1000v40.7C784 64 642 63.3 500 50.7Z"></path></svg>-->
   </div>
-  <div data-theme="cupcake" class="lg:min-h-screen snap-start " id="About_me">
+  <div class="lg:min-h-screen snap-start " data-theme="cupcake" id="About_me">
     <div class=" snap-start flex flex-col h-max absolute-wave-at-top">
       <h2 class="section-title">À propos de moi</h2>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start lg:items-center px-4 lg:px-20 grow"
@@ -243,7 +268,7 @@
         <div class="flex flex-col justify-center">
           <div class="avatar mx-auto mb-3">
             <div class="mask mask-squircle w-32 md:w-96 ">
-              <img alt="Photo de Vianney" src="images/illustrations/profileid.avif">
+              <img alt="Photo de Vianney" src="images/illustrations/profileid.jpg">
             </div>
           </div>
           <div class="p-2 " id="tech-stack ">
@@ -300,9 +325,9 @@
         <!-- About Me Text -->
         <article class="pt-4 pb-8 prose flex-grow">
           <h3>✨ À Propos de Moi</h3>
-          <p>Bienvenue, je suis Vianney un développeur Fullstack de <img class="inline not-prose"
+          <p>Bienvenue, je suis Vianney un développeur Fullstack de <img alt="Drapeau Français"
+                                                                         class="inline not-prose"
                                                                          src="https://cdn-icons-png.flaticon.com/512/197/197560.png"
-                                                                         alt="Drapeau Français"
                                                                          width="13"/> <b>Lyon,
             France</b></p>
           <p>Je suis passionné par la création de projets diverses. Voici quelques exemples :</p>
@@ -361,7 +386,7 @@
         <div class="review-card-header">
           <div class="review-card-header-avatar">
             <div class="review-card-header-avatar-image">
-              <img class="mx-auto" src="images/review-vincent-amstoutz.jpg" alt="Photo de profil de Vincent Amstoutz"/>
+              <img alt="Photo de profil de Vincent Amstoutz" class="mx-auto" src="images/review-vincent-amstoutz.jpg"/>
             </div>
           </div>
           <div class="review-card-header-text">
@@ -424,7 +449,7 @@
         <div class="review-card-header">
           <div class="review-card-header-avatar">
             <div class="review-card-header-avatar-image">
-              <img class="mx-auto" src="images/review-vincent-amstoutz.jpg" alt="Photo de profil de Vincent Amstoutz"/>
+              <img alt="Photo de profil de Vincent Amstoutz" class="mx-auto" src="images/review-vincent-amstoutz.jpg"/>
             </div>
           </div>
           <div class="review-card-header-text">
