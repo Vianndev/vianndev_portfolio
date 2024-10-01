@@ -5,18 +5,19 @@
 @tailwind variants;
 
 /* Custom CSS class for underline hover effect */
-.underline-hover {
-  @apply text-primary transition-all duration-300 ease-in-out;
-}
+@layer components {
+  .underline-hover {
+    @apply text-primary transition-all duration-300 ease-in-out;
+  }
 
-.underline-hover span {
-  @apply bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat transition-all duration-500 ease-out;
-}
+  .underline-hover span {
+    @apply bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat transition-all duration-500 ease-out;
+  }
 
-.underline-hover:hover span {
-  @apply bg-[length:100%_2px];
+  .underline-hover:hover span {
+    @apply bg-[length:100%_2px];
+  }
 }
-
 .section-title {
   @apply text-2xl md:text-6xl font-poppins-bold font-bold mt-3 mb-8  text-center
 }
@@ -27,10 +28,16 @@
 
 @layer components {
   .review-card {
-    @apply flex card lg:card-side drop-shadow-2xl m-auto my-auto rounded-xl overflow-hidden
+    @apply flex card lg:card-side shadow-2xl m-auto my-auto rounded-xl overflow-hidden
+  }
+  .review-card-body {
+    @apply card-body items-center bg-neutral  text-base-100
+  }
+  .review-card-body article p {
+    @apply  prose text-base-100 !important
   }
   .review-card-header {
-    @apply bg-neutral-content flex flex-row md:flex-col md:justify-center items-center justify-around;
+    @apply bg-primary flex flex-row md:flex-col md:justify-center items-center justify-around;
   }
 
   .review-card-header-avatar {
