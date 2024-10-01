@@ -13,8 +13,6 @@ Bienvenue sur le dépôt GitHub de mon portfolio personnel. Ce projet utilise **
 L'arborescence du projet est la suivante :
 
 ```bash
-.
-
 ├── css                      # Dossier contenant le style
 ├── fonts                    # Dossier contenant les polices utilisées
 │   └── Poppins              # Police Poppins
@@ -59,12 +57,6 @@ Pour cloner et exécuter le projet localement, suivez les étapes ci-dessous :
 
    ```bash
    npm run dev
-   ```
-
-5. Ouvrez votre navigateur et accédez à l'adresse suivante :
-
-   ```bash
-   http://localhost:3000
    ```
 
 ## 📝 Licence
