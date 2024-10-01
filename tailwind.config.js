@@ -30,7 +30,18 @@ module.exports = {
     require('daisyui'),
   ],
   daisyui: {
-    themes: ["light", "dark", "synthwave", "cupcake"],
+    themes: [
+      {
+        cupcake: {
+          ...require("daisyui/src/theming/themes")["cupcake"],
+          // "primary": "#d1dbff", //primary-content from light theme
+          "lightblue": "oklch(89.824% .06192 275.75/1)", //primary-content from light theme
+        }
+      },
+      "dark",
+      "synthwave",
+      "light",
+    ],
   },
 }
 

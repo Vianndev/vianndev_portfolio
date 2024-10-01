@@ -44,7 +44,7 @@
     @apply  prose-neutral
   }
   .review-card-body .underline-hover {
-    @apply  text-neutral bg-secondary italic !important
+    @apply  text-neutral bg-secondary font-bold !important
   }
   .review-card-header {
     @apply bg-neutral text-base-100 flex flex-row md:flex-col md:justify-center items-center justify-around;
