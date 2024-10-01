@@ -4,6 +4,13 @@
 @tailwind utilities;
 @tailwind variants;
 
+
+@layer base {
+  html {
+    font-family:  sans-serif;
+  }
+}
+
 /* Custom CSS class for underline hover effect */
 @layer components {
   .underline-hover {
@@ -11,7 +18,7 @@
   }
 
   .underline-hover span {
-    @apply bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat transition-all duration-500 ease-out;
+    @apply bg-left-bottom bg-gradient-to-r from-neutral to-neutral bg-[length:0%_2px] bg-no-repeat transition-all duration-500 ease-out;
   }
 
   .underline-hover:hover span {
@@ -31,13 +38,16 @@
     @apply flex card lg:card-side shadow-2xl m-auto my-auto rounded-xl overflow-hidden
   }
   .review-card-body {
-    @apply card-body items-center bg-neutral  text-base-100
+    @apply card-body items-center bg-primary
   }
-  .review-card-body article p {
-    @apply  prose text-base-100 !important
+  .review-card-body article {
+    @apply  prose-neutral
+  }
+  .review-card-body .underline-hover {
+    @apply  text-neutral bg-secondary italic !important
   }
   .review-card-header {
-    @apply bg-primary flex flex-row md:flex-col md:justify-center items-center justify-around;
+    @apply bg-neutral text-base-100 flex flex-row md:flex-col md:justify-center items-center justify-around;
   }
 
   .review-card-header-avatar {
@@ -45,7 +55,7 @@
   }
 
   .review-card-header-avatar-image {
-    @apply mask mask-squircle w-16 md:w-24 lg:w-32;
+    @apply mask mask-squircle w-16 md:w-24 lg:w-32
   }
 
   .review-card-header-text {
