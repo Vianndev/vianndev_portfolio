@@ -47,7 +47,7 @@
 }
 @layer components {
   .review-card {
-    @apply flex card lg:card-side shadow-2xl m-auto my-auto rounded-xl overflow-hidden
+    @apply flex card lg:card-side lg:max-h-[80%]  shadow-2xl m-auto my-auto rounded-xl overflow-hidden
   }
   .review-card-body {
     @apply card-body items-center bg-[#fce6e8]

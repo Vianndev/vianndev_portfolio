@@ -83,7 +83,7 @@
 <!-- overflow-y-scroll snap-proximity snap-y h-screen , "h-screen" is needed on body for snap to work !-->
 <div class="w-screen overflow-y-scroll snap-proximity snap-y">
   <!-- all lvl1 children need a snap... !-->
-  <div class="hero min-h-screen snap-start" id="Presentation">
+  <div class="hero min-h-screen snap-center " id="Presentation">
     <div class="hero-content mx-3 flex-col lg:flex-row">
       <div class="h-full">
         <h1 class="h-full flex flex-col gap-y-2 sm:gap-y-8 sm:my-3">
@@ -121,7 +121,7 @@
       </div>
     </div>
   </div>
-  <div class="relative bg-primary-content snap-center  w-full overflow-visible z-20" data-theme="light"
+  <div class="relative bg-primary-content snap-start md:snap-center w-full overflow-visible z-20" data-theme="light"
        id="project-item-main-bd-gestion">
     <!--    The svg needs the be absolute and his parents relative.It is flipped thanks to transform center and scale-->
     <svg class="fill-primary-content w-full bg-no-repeat bg-cover overflow-visible absolute bottom-full "
@@ -202,7 +202,7 @@
       </g>
     </svg>
   </div>
-  <div class="absolute-wave-at-top snap-center bg-accent w-full overflow-visible relative z-10"
+  <div class="absolute-wave-at-top snap-start md:snap-center bg-accent w-full overflow-visible relative z-10"
        id="project-item-react-weather">
     <div
       class="project-item ">
@@ -266,7 +266,7 @@
         opacity=".5"/>
     </svg>
   </div>
-  <div class="absolute-wave-at-top snap-center bg-[#fce6e8] w-full overflow-visible relative" id="project-item-sigedi">
+  <div class="absolute-wave-at-top snap-start md:snap-center bg-[#fce6e8] w-full overflow-visible relative" id="project-item-sigedi">
     <div
       class="project-item">
       <div class="project-item-image">
@@ -306,7 +306,7 @@
         opacity=".5"/>
     </svg>
   </div>
-  <div class="lg:min-h-screen snap-end " id="About_me">
+  <div class="lg:min-h-screen snap-start lg:snap-end " id="About_me">
     <div class="flex flex-col h-max pt-10 lg:pt-24 ">
       <h2 class="section-title">À propos de moi</h2>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start lg:items-center px-4 lg:px-20 grow"
@@ -442,7 +442,7 @@
           </div>
         </div>
         <div class="review-card-body ">
-          <article class="prose-lg">
+          <article class=" prose md:prose-lg">
             <p>
               <a class="underline-hover not-prose">
                 <span>J'ai pu réaliser mon stage de fin d'études avec Vincent.</span>
@@ -490,7 +490,7 @@
           </article>
         </div>
       </div>
-      <div class="review_received review-card max-w-2xl"
+      <div class="review_received review-card"
            id="review_received_vincent">
         <div class="review-card-header bg-primary ">
           <div class="review-card-header-avatar">
@@ -504,8 +504,8 @@
             <p>Sigedi</p>
           </div>
         </div>
-        <div class="review-card-body lg:max-w-md xl:max-w-lg bg-[#fce6e8]">
-          <article class="prose-lg">
+        <div class="review-card-body bg-[#fce6e8]">
+          <article class=" prose md:prose-lg">
             <p>
               <a class="underline-hover not-prose">
                 <span>Vianney a été un excellent stagiaire !</span>
