@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="scroll-smooth overflow-x-none font-poppins-medium" data-theme="cupcake" lang="">
+<html class="scroll-smooth overflow-x-none h-screen font-poppins-medium" data-theme="cupcake" lang="">
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -79,9 +79,9 @@
     </div>
   </nav>
 </header>
-<body class="overflow-x-none min-h-svh flex flex-col">
-<div class="overflow-y-scroll snap-proximity snap-y h-screen w-screen">
-  <!--  snap-proximity snap-y h-screen "h-screen" is needed for snap to work !-->
+<body class="overflow-none min-h-svh flex flex-col  h-screen">
+<div class="w-screen overflow-y-scroll snap-proximity snap-y">
+  <!-- overflow-y-scroll snap-proximity snap-y h-screen "h-screen" is needed on body for snap to work !-->
   <div class="hero min-h-screen snap-start" id="Presentation">
     <div class="hero-content mx-3 flex-col lg:flex-row">
       <div class="h-full">
@@ -306,7 +306,7 @@
     </svg>
   </div>
   <div class="lg:min-h-screen snap-end " id="About_me">
-    <div class="flex flex-col h-max absolute-wave-at-top">
+    <div class="flex flex-col h-max pt-10 lg:pt-24 ">
       <h2 class="section-title">À propos de moi</h2>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start lg:items-center px-4 lg:px-20 grow"
            id="section-about-me">

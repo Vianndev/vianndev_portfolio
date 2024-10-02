@@ -4750,6 +4750,18 @@ html {
   padding-top: 1rem;
 }
 
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -5765,6 +5777,10 @@ html {
   .lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .lg\:pt-24 {
+    padding-top: 6rem;
   }
 }
 
