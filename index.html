@@ -80,7 +80,7 @@
   </nav>
 </header>
 <body class="overflow-x-none min-h-svh flex flex-col">
-<div class="overflow-y-scroll snap-y  snap-proximity h-max w-screen">
+<div class="overflow-y-scroll snap-proximity snap-y h-screen w-screen"> <!--  snap-proximity snap-y h-screen "h-screen" is needed for snap to work !-->
   <div class="hero min-h-screen snap-start"  id="Presentation">
     <div class="hero-content mx-3 flex-col lg:flex-row">
       <div class="h-full">
@@ -119,7 +119,7 @@
       </div>
     </div>
   </div>
-  <div class="relative snap-center bg-primary-content  w-full overflow-visible z-20" id="Projects" data-theme="light">
+  <div class="relative bg-primary-content  snap-center  w-full overflow-visible z-20" id="project-item-main-bd-gestion" data-theme="light">
     <!--    The svg needs the be absolute and his parents relative.It is flipped thanks to transform center and scale-->
     <svg class="fill-primary-content w-full bg-no-repeat bg-cover overflow-visible absolute bottom-full "
          style="transform-origin: center" transform="scale(1, -1)" viewBox='0 0 1000 20'
@@ -133,7 +133,7 @@
     <h2 class="text-2xl md:text-6xl font-poppins-bold -mt-0.5 font-bold  py-8 text-[#562295] text-center">
       Projets</h2>
     <div
-      class="project-item">
+      class="project-item snap-center">
       <div class="project-item-image" id="projects-item-bd">
         <div class="carousel rounded-2xl w-full drop-shadow-2xl overflow-hidden">
           <div class="carousel-item w-full " id="bd-front-preview">
@@ -198,7 +198,7 @@
       <path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path>
     </svg>
   </div>
-  <div class="absolute-wave-at-top snap-center bg-accent w-full overflow-visible relative z-10" id="project-item-react-weather" data-theme="cupcake">
+  <div class="absolute-wave-at-top snap-center bg-accent w-full overflow-visible relative z-10" id="project-item-react-weather" >
     <div
       class="project-item ">
       <div class="project-item-image" id="-item-bd">
@@ -305,7 +305,7 @@
     <!--    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17"  class="fill-accent w-full bg-no-repeat bg-cover overflow-visible absolute top-full"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" /><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" /><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5"/></svg>-->
     <!--    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1000 20" class="fill-accent w-full bg-no-repeat bg-cover overflow-visible absolute top-full"><path d="M500 80.7C358 68 0 4 0 4V0h1000v84.7c-216 23.3-358 8.6-500-4Z" opacity=".3"></path><path d="M500 65.7C358 53 0 4 0 4V0h1000v62.7c-216 23.3-358 15.6-500 3Z" opacity=".5"></path><path d="M500 50.7C358 38 0 4 0 4V0h1000v40.7C784 64 642 63.3 500 50.7Z"></path></svg>-->
   </div>
-  <div class="lg:min-h-screen snap-start " data-theme="cupcake" id="About_me">
+  <div class="lg:min-h-screen snap-end "  id="About_me">
     <div class=" snap-start flex flex-col h-max absolute-wave-at-top">
       <h2 class="section-title">À propos de moi</h2>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start lg:items-center px-4 lg:px-20 grow"
@@ -416,9 +416,8 @@
       </div>
     </div>
   </div>
-
   <div class="hero md:min-h-screen snap-start flex-col flex-grow overflow-visible" id="Reviews" >
-    <div class="hero-content snap-start flex-col h-full">
+    <div class="hero-content  flex-col h-full">
       <h2 class="section-title">Recommandations</h2>
       <div class="form-control w-52 mx-auto">
         <label class="label cursor-pointer">
@@ -556,8 +555,8 @@
       </div>
     </div>
   </div>
-  <div class="h-full" id="Diplomes">
-    <div class="snap-start flex flex-col h-full  w-10/12 md:w-8/12 lg:w-10/12 lg:min-h-svh m-auto">
+  <div class="h-full snap-start" id="Diplomes">
+    <div class=" flex flex-col h-full  w-10/12 md:w-8/12 lg:w-10/12 lg:min-h-svh m-auto">
       <div>
         <h1 class="section-title">Diplomes</h1>
       </div>

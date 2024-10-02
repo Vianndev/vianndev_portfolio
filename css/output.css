@@ -4493,6 +4493,10 @@ html {
   height: max-content;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -4549,12 +4553,20 @@ html {
   scroll-snap-type: y var(--tw-scroll-snap-strictness);
 }
 
+.snap-mandatory {
+  --tw-scroll-snap-strictness: mandatory;
+}
+
 .snap-proximity {
   --tw-scroll-snap-strictness: proximity;
 }
 
 .snap-start {
   scroll-snap-align: start;
+}
+
+.snap-end {
+  scroll-snap-align: end;
 }
 
 .snap-center {
