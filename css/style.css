@@ -32,7 +32,19 @@
 .absolute-wave-at-top {
   @apply pt-14 xl:pt-56
 }
+@layer components {
+  .project-item {
+    @apply p-5  grid grid-cols-1 xl:grid-cols-10 xl:w-8/12 2xl:w-10/12 xl:align-middle xl:mx-auto items-center md:justify-center xl:items-center gap-3
+  }
 
+  .project-item-image {
+    @apply xl:col-span-7 min-w-full xl:my-auto
+  }
+
+  .projects-item-description {
+    @apply min-w-40 xl:min-w-96 prose xl:col-span-3
+  }
+}
 @layer components {
   .review-card {
     @apply flex card lg:card-side shadow-2xl m-auto my-auto rounded-xl overflow-hidden
