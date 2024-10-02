@@ -38,16 +38,16 @@
     @apply flex card lg:card-side shadow-2xl m-auto my-auto rounded-xl overflow-hidden
   }
   .review-card-body {
-    @apply card-body items-center bg-primary
+    @apply card-body items-center bg-[#fce6e8]
   }
   .review-card-body article {
     @apply  prose-neutral
   }
   .review-card-body .underline-hover {
-    @apply  text-neutral bg-secondary font-bold !important
+    @apply  text-neutral bg-[#81afe1] font-bold !important
   }
   .review-card-header {
-    @apply bg-neutral text-base-100 flex flex-row md:flex-col md:justify-center items-center justify-around;
+    @apply bg-primary text-base-100 flex flex-row md:flex-col md:justify-center items-center justify-around;
   }
 
   .review-card-header-avatar {
