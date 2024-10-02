@@ -30,7 +30,7 @@
 }
 
 .absolute-wave-at-top {
-  @apply pt-14 xl:pt-56
+  @apply pt-14  2xl:pt-56
 }
 @layer components {
   .project-item {

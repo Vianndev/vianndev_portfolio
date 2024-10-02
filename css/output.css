@@ -4553,10 +4553,6 @@ html {
   scroll-snap-type: y var(--tw-scroll-snap-strictness);
 }
 
-.snap-mandatory {
-  --tw-scroll-snap-strictness: mandatory;
-}
-
 .snap-proximity {
   --tw-scroll-snap-strictness: proximity;
 }
@@ -5813,7 +5809,7 @@ html {
   padding-top: 3.5rem;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1536px) {
   .absolute-wave-at-top {
     padding-top: 14rem;
   }
