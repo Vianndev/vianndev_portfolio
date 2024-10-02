@@ -18,11 +18,11 @@ L'arborescence du projet est la suivante :
 │   └── Poppins              # Police Poppins
 ├── images                   # Images du projet
 │   └── illustrations        # Illustrations utilisées dans le portfolio
-│       ├── bdd              # Dossier pour les prévisualisations des BD
+│       ├── bd-gestion              # Dossier pour les prévisualisations des BD
 │       │   └── Previews     # Aperçus des BD
 │       └── react-weather    # Illustrations pour le projet React Weather
 ├── js                       # Scripts JavaScript du projet
-└── index.html                
+└── index.html
 ```
 ## 🚀 Installation
 
