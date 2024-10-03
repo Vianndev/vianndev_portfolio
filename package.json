@@ -10,6 +10,7 @@
   "author": "",
   "scripts": {
     "dev": "tailwindcss -i ./css/style.css -o ./css/output.css --watch",
+    "tailwind_prod": "npx tailwindcss -i ./css/style.css -o ./css/output.css --minify",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
