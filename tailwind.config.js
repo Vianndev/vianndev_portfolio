@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html,js}","./js/*.{html,js}"],
+  content: ['./*.{html,js}', './js/*.{html,js}'],
   theme: {
     extend: {
       fontFamily: {
@@ -26,22 +26,21 @@ module.exports = {
     },
   },
   plugins: [
-    require("@tailwindcss/typography"),
+    require('@tailwindcss/typography'),
     require('daisyui'),
   ],
   daisyui: {
     themes: [
       {
         cupcake: {
-          ...require("daisyui/src/theming/themes")["cupcake"],
+          ...require('daisyui/src/theming/themes').cupcake,
           // "primary": "#d1dbff", //primary-content from light theme
-          "lightblue": "oklch(89.824% .06192 275.75/1)", //primary-content from light theme
-        }
+          lightblue: 'oklch(89.824% .06192 275.75/1)', // primary-content from light theme
+        },
       },
-      "dark",
-      "synthwave",
-      "light",
+      'dark',
+      'synthwave',
+      'light',
     ],
   },
 }
-
