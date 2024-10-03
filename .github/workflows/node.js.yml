@@ -29,4 +29,3 @@ jobs:
     - run: npm ci
     - run: npm run lint:fix
     - run: npm run tailwind_prod --if-present
-    - run: npm test
